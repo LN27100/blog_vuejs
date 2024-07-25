@@ -1,6 +1,6 @@
 <template>
     <div>
-      <h1>Bienvenue sur mon blog</h1>
+      <h1>Bienvenue le blog Dragon Ball Z</h1>
       <BlogList :posts="posts" />
     </div>
   </template>
@@ -12,14 +12,7 @@
     components: {
       BlogList
     },
-    data() {
-      return {
-        posts: [
-          { id: 1, title: 'Premier Article', content: 'Contenu du premier article.' },
-          { id: 2, title: 'Deuxième Article', content: 'Contenu du deuxième article.' }
-        ]
-      };
-    }
+ props: ['posts']
   }
   </script>
   
@@ -27,7 +20,9 @@
   /* Styles pour Home.vue */
 
   h1 {
-color: white;
+color: #2986cc;
+text-align: center;
+font-weight: bold;
   }
 
   </style>

@@ -14,7 +14,7 @@
     },
     created() {
       const postId = this.$route.params.id;
-      // Ici, tu peux ajouter la logique pour récupérer l'article par son ID
+      this.post = this.posts.find(post => post.id == postId);
     }
   }
   </script>
