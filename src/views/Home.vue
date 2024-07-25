@@ -1,6 +1,6 @@
 <template>
     <div>
-      <h1>Bienvenue sur le Blog</h1>
+      <h1>Bienvenue sur mon blog</h1>
       <BlogList :posts="posts" />
     </div>
   </template>
@@ -25,5 +25,10 @@
   
   <style scoped>
   /* Styles pour Home.vue */
+
+  h1 {
+color: white;
+  }
+
   </style>
   
