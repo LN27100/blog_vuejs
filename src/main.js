@@ -5,6 +5,8 @@ import Home from './views/Home.vue';
 import Post from './views/Post.vue';
 import './assets/styles.css';
 
+
+
 // Définir les routes
 const routes = [
   { path: '/', component: Home },
