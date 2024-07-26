@@ -18,14 +18,14 @@
     "title": "Tortue Géniale",
     "summary": "Maître des arts martiaux et premier mentor de Goku.",
     "content": "<p>Tortue Géniale, également connu sous le nom de Kame Sennin, est un maître des arts martiaux et le premier mentor de Goku.</p>",
-    "image": "/img/tortue-geniale.png"
+    "image": "/img/tortueGeniale.jpg"
   },
   {
     "id": 4,
     "title": "Chichi",
     "summary": "Femme de Goku, mère de Gohan et Goten.",
     "content": "<p>Chichi est la femme de Goku et la mère de Gohan et Goten. Elle est connue pour son caractère fort et protecteur.</p>",
-    "image": "/img/chichi.png"
+    "image": "/img/chichi.jpg"
   },
   {
     "id": 5,
