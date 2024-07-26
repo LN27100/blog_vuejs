@@ -1,8 +1,8 @@
 <template>
   <div v-if="post">
     <h1>{{ post.title }}</h1>
-    <div v-html="post.content"></div>
-    <img v-if="post.image" :src="post.image" :alt="post.title" />
+    <img v-if="post.image" :src="post.image" :alt="post.title" class="pictures"/>
+    <div class= "describ" v-html="post.content"></div>
   </div>
   <div v-else>
     <p>Article non trouvé</p>
@@ -38,3 +38,18 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+.describ {
+  margin-left: 2rem;
+}
+
+.pictures {
+  display: block; /* Traitement de l'image comme un bloc pour permettre le centrage avec marges */
+  margin: 0 auto;
+  width: 20rem;
+  height: auto;
+}
+
+</style>
