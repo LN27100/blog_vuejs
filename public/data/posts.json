@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "title": "Sangoku",
+    "summary": "Personnage principal de Dragon Ball Z.",
+    "content": "<p>Sangoku, aussi connu sous le nom de Goku, est le personnage principal de Dragon Ball Z.</p>",
+    "image": "/img/sangoku.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Vegeta",
+    "summary": "Prince de la planète Végéta et rival de Goku.",
+    "content": "<p>Végéta est le prince de la planète Végéta, un Saiyan puissant et rival de Goku.</p>",
+    "image": "/img/vegeta.png"
+  },
+  {
+    "id": 3,
+    "title": "Tortue Géniale",
+    "summary": "Maître des arts martiaux et premier mentor de Goku.",
+    "content": "<p>Tortue Géniale, également connu sous le nom de Kame Sennin, est un maître des arts martiaux et le premier mentor de Goku.</p>",
+    "image": "/img/tortue-geniale.png"
+  },
+  {
+    "id": 4,
+    "title": "Chichi",
+    "summary": "Femme de Goku, mère de Gohan et Goten.",
+    "content": "<p>Chichi est la femme de Goku et la mère de Gohan et Goten. Elle est connue pour son caractère fort et protecteur.</p>",
+    "image": "/img/chichi.png"
+  },
+  {
+    "id": 5,
+    "title": "Sangohan",
+    "summary": "Premier fils de Goku avec un immense potentiel.",
+    "content": "<p>Gohan est le premier fils de Goku et Chichi, connu pour son immense potentiel de puissance.</p>",
+    "image": "/img/sangohan.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Sangoten",
+    "summary": "Deuxième fils de Goku, ami de Trunks.",
+    "content": "<p>Goten est le deuxième fils de Goku, connu pour sa ressemblance avec son père et son amitié avec Trunks.</p>",
+    "image": "/img/sangoten.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Videl",
+    "summary": "Fille de Mr. Satan et femme de Gohan.",
+    "content": "<p>Videl est la fille de Mr. Satan et la femme de Gohan, ainsi que la mère de Pan.</p>",
+    "image": "/img/videl.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Pan",
+    "summary": "Fille de Gohan, petite-fille de Goku.",
+    "content": "<p>Pan est la fille de Gohan et Videl, et la petite-fille de Goku. Elle est également une guerrière talentueuse.</p>",
+    "image": "/img/pan.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Bulma",
+    "summary": "Scientifique brillante et femme de Vegeta.",
+    "content": "<p>Bulma est une scientifique brillante, amie de Goku et la femme de Vegeta. Elle est l'une des premières alliées de Goku dans sa quête des Dragon Balls.</p>",
+    "image": "/img/bulma.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Trunks",
+    "summary": "Fils de Vegeta et Bulma, ami de Goten.",
+    "content": "<p>Trunks est le fils de Vegeta et Bulma. Il est un combattant puissant et ami proche de Goten.</p>",
+    "image": "/img/trunks.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Krillin",
+    "summary": "Ami proche de Goku et mari de C18.",
+    "content": "<p>Krillin est un ami proche de Goku et un combattant compétent. Il est marié à C18 et père de Marron.</p>",
+    "image": "/img/krillin.jpg"
+  },
+  {
+    "id": 12,
+    "title": "C18",
+    "summary": "Cyborg et femme de Krillin.",
+    "content": "<p>C18, autrefois connue sous le nom de Lazuli, est un cyborg et la femme de Krillin. Elle est également une combattante redoutable.</p>",
+    "image": "/img/c18.jpg"
+  },
+  {
+    "id": 13,
+    "title": "Marron",
+    "summary": "Fille de Krillin et C18, non intéressée par le combat.",
+    "content": "<p>Marron est la fille de Krillin et C18. Contrairement à ses parents, elle ne montre pas d'intérêt particulier pour le combat.</p>",
+    "image": "/img/marron.jpg"
+  },
+  {
+    "id": 14,
+    "title": "Yamcha",
+    "summary": "Ancien bandit du désert, ami de Goku.",
+    "content": "<p>Yamcha est un ancien bandit du désert et ami de Goku. Bien qu'il soit moins puissant que les autres guerriers Z, il reste un combattant compétent.</p>",
+    "image": "/img/yamcha.jpg"
+  }
+]
