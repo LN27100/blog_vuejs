@@ -3,3 +3,8 @@ body {
     margin: 0;
   }
   
+  h1 {
+    color: #2986cc;
+    text-align: center;
+    font-weight: bold;
+  }
