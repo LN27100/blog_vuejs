@@ -63,11 +63,18 @@ export default {
 <style scoped>
 ul {
   list-style-type: none;
-  padding: 0;
+  padding: 2rem;
 }
 
 li {
-  margin-bottom: 15px;
+margin-bottom: 1rem;
+border-bottom: 1px solid #2986cc;
+}
+
+a {
+  color: #9B2E06;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 /* Conteneur de la phrase */
