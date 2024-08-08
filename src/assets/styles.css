@@ -8,4 +8,9 @@ body {
     text-align: center;
     font-family: 'Chelsea Market';
     font-weight: bold;
+    text-shadow:
+  -1.5px -1.5px 0 black,
+  1.5px -1.5px 0 black,
+  -1.5px 1.5px 0 black,
+  1.5px 1.5px 0 black;
   }

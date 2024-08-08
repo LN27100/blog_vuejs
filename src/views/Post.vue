@@ -43,6 +43,8 @@ export default {
 
 .describ {
   margin-left: 2rem;
+  color: #333333;
+
 }
 
 .pictures {

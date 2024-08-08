@@ -62,23 +62,9 @@ export default {
 
 
 <style scoped>
-ul {
-  list-style-type: none;
-  padding: 2rem;
-}
 
-li {
-margin-bottom: 1rem;
-border-bottom: 1px solid #2986cc;
-}
 
-a {
-  color: #9B2E06;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-/* Conteneur de la phrase */
+/* Conteneur du titre de page */
 .warp-container {
   display: flex;
   justify-content: center; 
@@ -98,7 +84,8 @@ a {
 .warp__0 {
   font: normal 30px/1 'Chelsea Market';
   font-weight: bold;
-  color: #2986cc;
+  color: #005a99;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
   transform-origin: 50% 30px;
   transform: translate(20.4765px, 96.8363px) rotate(1.041106rad);
 }
@@ -106,30 +93,25 @@ a {
 .warp__1 {
   font: normal 30px/1 'Chelsea Market';
   font-weight: bold;
-  color: #2986cc;
+  color: #005a99;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
   transform-origin: 50% 34px;
   transform: translate(29.799999999999997px, 115.91820000000001px) rotate(0.952006rad);
-}
-
-.warp__2 {
-  font: normal 30px/1 'Chelsea Market';
-  font-weight: bold;
-  color: #2986cc;
-  transform-origin: 50% 34px;
-  transform: translate(45.7798px, 136.4852px) rotate(0.836371rad);
 }
 
 .warp__3 {
   font: normal 30px/1 'Chelsea Market';
   font-weight: bold;
-  color: #2986cc;
+  color: #005a99;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
   transform-origin: 50% 40px;
   transform: translate(64.5144px, 155.2149px) rotate(0.705882rad);
 }
 
 .warp__4 {
   font: normal 30px/1 'Chelsea Market';
-  color: #2986cc;
+  color: #005a99;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
   font-weight: bold;
   transform-origin: 50% 24px;
   transform: translate(88.0992px, 167.5382px) rotate(0.600926rad);
@@ -137,7 +119,8 @@ a {
 
 .warp__5 {
   font: normal 30px/1 'Chelsea Market';
-  color: #2986cc;
+  color: #005a99;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
   font-weight: bold;
   transform-origin: 50% 34px;
   transform: translate(98.1284px, 177.9316px) rotate(0.49481rad);
@@ -145,23 +128,17 @@ a {
 
 .warp__6 {
   font: normal 30px/1 'Chelsea Market';
-  color: #2986cc;
+  color: #005a99;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
   font-weight: bold;
   transform-origin: 50% 34px;
   transform: translate(122.4804px, 189.1036px) rotate(0.350878rad);
 }
 
-.warp__7 {
-  font: normal 30px/1 'Chelsea Market';
-  color: #2986cc;
-  font-weight: bold;
-  transform-origin: 50% 34px;
-  transform: translate(148.4939px, 196.5405px) rotate(0.218142rad);
-}
-
 .warp__8 {
   font: normal 30px/1 'Chelsea Market';
-  color: #2986cc;
+  color: #007acc;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
   font-weight: bold;
   transform-origin: 50% 34px;
   transform: translate(174.9594px, 200.761px) rotate(0.094828rad);
@@ -169,23 +146,17 @@ a {
 
 .warp__9 {
   font: normal 30px/1 'Chelsea Market';
-  color: #2986cc;
+  color: #007acc;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
   font-weight: bold;
   transform-origin: 50% 34px;
   transform: translate(202.454px, 201.8496px) rotate(-0.01024rad);
 }
 
-.warp__10 {
-  font: normal 30px/1 'Chelsea Market';
-  color: #2986cc;
-  font-weight: bold;
-  transform-origin: 50% 34px;
-  transform: translate(229.0243px, 200.2847px) rotate(-0.102849rad);
-}
-
 .warp__11 {
   font: normal 30px/1 'Chelsea Market';
-  color: #2986cc;
+  color: #007acc;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
   font-weight: bold;
   transform-origin: 50% 28px;
   transform: translate(255.8571px, 196.3169px) rotate(-0.1833rad);
@@ -193,7 +164,8 @@ a {
 
 .warp__12 {
   font: normal 30px/1 'Chelsea Market';
-  color: #2986cc;
+  color: #007acc;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
   font-weight: bold;
   transform-origin: 50% 46px;
   transform: translate(284.1316px, 191.2629px) rotate(-0.242992rad);
@@ -201,7 +173,8 @@ a {
 
 .warp__13 {
   font: normal 30px/1 'Chelsea Market';
-  color: #2986cc;
+  color: #007acc;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
   font-weight: bold;
   transform-origin: 50% 34px;
   transform: translate(301.5984px, 185.0673px) rotate(-0.294055rad);
@@ -209,7 +182,8 @@ a {
 
 .warp__14 {
   font: normal 30px/1 'Chelsea Market';
-  color: #2986cc;
+  color: #53a3d7;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
   font-weight: bold;
   transform-origin: 50% 34px;
   transform: translate(327.3747px, 176.5083px) rotate(-0.345868rad);
@@ -217,7 +191,8 @@ a {
 
 .warp__15 {
   font: normal 30px/1 'Chelsea Market';
-  color: #2986cc;
+  color: #53a3d7;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
   font-weight: bold;
   transform-origin: 50% 34px;
   transform: translate(355.8px, 165.9019px) rotate(-0.358303rad);
@@ -225,23 +200,17 @@ a {
 
 .warp__16 {
   font: normal 30px/1 'Chelsea Market';
-  color: #2986cc;
+  color: #53a3d7;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
   font-weight: bold;
   transform-origin: 50% 34px;
-  transform: translate(380.5973px, 157.0402px) rotate(-0.327675rad);
-}
-
-.warp__17 {
-  font: normal 30px/1 'Chelsea Market';
-  color: #2986cc;
-  font-weight: bold;
-  transform-origin: 50% 34px;
-  transform: translate(406.3153px, 148.7839px) rotate(-0.292972rad);
+  transform: translate(380.6973px, 157.0402px) rotate(-0.327675rad);
 }
 
 .warp__18 {
   font: normal 30px/1 'Chelsea Market';
-  color: #2986cc;
+  color: #53a3d7;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
   font-weight: bold;
   transform-origin: 50% 34px;
   transform: translate(431.6917px, 141.904px) rotate(-0.256447rad);
@@ -249,7 +218,8 @@ a {
 
 .warp__19 {
   font: normal 30px/1 'Chelsea Market';
-  color: #2986cc;
+  color: #53a3d7;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
   font-weight: bold;
   transform-origin: 50% 34px;
   transform: translate(455.8316px, 135.7603px) rotate(-0.212781rad);
@@ -257,7 +227,8 @@ a {
 
 .warp__20 {
   font: normal 30px/1 'Chelsea Market';
-  color: #2986cc;
+  color: #53a3d7;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
   font-weight: bold;
   transform-origin: 50% 80px;
   transform: translate(483.0262px, 131.8926px) rotate(-0.174111rad);
@@ -265,18 +236,45 @@ a {
 
 .warp__21 {
   font: normal 30px/1 'Chelsea Market';
-  color: #2986cc;
+  color: #53a3d7;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
   font-weight: bold;
   transform-origin: 50% 100px;
   transform: translate(495.184px, 129.9196px) rotate(-0.14718rad);
 }
 
 .warp__22 {
-  font: normal 30px/1 'Chelsea Market';
-  color: #2986cc;
+  font: normal 45px/1 'Chelsea Market';
+  color: yellow;
+  text-shadow:
+  -1.5px -1.5px 0 black,
+  1.5px -1.5px 0 black,
+  -1.5px 1.5px 0 black,
+  1.5px 1.5px 0 black;
   font-weight: bold;
   transform-origin: 50% 100px;
-  transform: translate(533.2073px, 126.13470000000001px) rotate(-0.026954rad);
+  transform: translate(530.2073px, 116.13470000000001px) rotate(-0.02699rad);
+}
+
+p {
+  color: #333333;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  padding: 2rem;
+}
+
+li {
+margin-bottom: 1rem;
+border-bottom: 1px solid #2986cc;
+}
+
+a {
+  color: #800000;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 </style>
