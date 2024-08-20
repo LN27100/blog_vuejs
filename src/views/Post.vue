@@ -1,11 +1,19 @@
 <template>
-      <button @click="goHome" class="back-button">Accueil</button>
+  <button @click="goHome" class="back-button">Accueil</button>
 
   <div>
     <div v-if="post">
       <h1>{{ post.title }}</h1>
-      <img v-if="post.image" :src="post.image" :alt="post.title" class="pictures"/>
+      <img v-if="post.image" :src="post.image" :alt="post.title" class="picture"/>
       <div class="describ" v-html="post.content"></div>
+      <img v-if="post.image1" :src="post.image1" :alt="post.title" class="picture"/>
+      <img v-if="post.image2" :src="post.image2" :alt="post.title" class="picture"/>
+      <img v-if="post.image3" :src="post.image3" :alt="post.title" class="picture"/>
+      <img v-if="post.image4" :src="post.image4" :alt="post.title" class="picture"/>
+      <img v-if="post.image5" :src="post.image5" :alt="post.title" class="picture"/>
+      <img v-if="post.image6" :src="post.image6" :alt="post.title" class="picture"/>
+      <img v-if="post.image7" :src="post.image7" :alt="post.title" class="picture"/>
+      <img v-if="post.image8" :src="post.image8" :alt="post.title" class="picture"/>
     </div>
     <div v-else>
       <p>Article non trouvé</p>
@@ -53,16 +61,17 @@ export default {
   color: #333333;
 }
 
-.pictures {
+.picture {
+  width: 20rem; /* Vous pouvez ajuster cette largeur selon vos besoins */
+  height: 15rem; /* Vous pouvez ajuster cette hauteur selon vos besoins */
+  object-fit: cover; /* Assure que l'image remplit le conteneur sans déformation */
   display: block;
-  margin: 0 auto;
-  width: 20rem;
-  height: auto;
+  margin: 1rem auto; /* Centre les images horizontalement et ajoute un espace vertical */
 }
 
 .back-button {
   display: inline-block;
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem 1rem; /* Ajusté pour être plus visible */
   margin-top: 1rem;
   margin-left: 1rem;
   background-color: yellow;
