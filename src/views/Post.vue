@@ -2,7 +2,7 @@
   <div v-if="post">
     <h1>{{ post.title }}</h1>
     <img v-if="post.image" :src="post.image" :alt="post.title" class="pictures"/>
-    <div class= "describ" v-html="post.content"></div>
+    <div class="describ" v-html="post.content"></div>
   </div>
   <div v-else>
     <p>Article non trouvé</p>
@@ -29,7 +29,7 @@ export default {
       return;
     }
     
-    const postId = Number(this.$route.params.id); // Assurez-vous que l'id est un nombre
+    const postId = Number(this.$route.params.id);
     this.post = this.posts.find(post => post.id === postId);
 
     if (!this.post) {
@@ -40,11 +40,9 @@ export default {
 </script>
 
 <style scoped>
-
 .describ {
   margin-left: 2rem;
   color: #333333;
-
 }
 
 .pictures {
@@ -53,5 +51,4 @@ export default {
   width: 20rem;
   height: auto;
 }
-
 </style>

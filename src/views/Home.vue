@@ -127,12 +127,12 @@ export default {
 .cristalBall {
   margin-top: -3rem;
   margin-left: 15rem;
-  height: 6rem;
+  height: 5rem;
   width: auto;
 }
 
 .cristalBall2 {
-  height: 5rem;
+  height: 4.7rem;
   width: auto;
   margin-top: 0rem;
   margin-left: 0rem;
@@ -141,35 +141,35 @@ export default {
 .cristalBall3 {
   margin-top: 7rem;
   margin-left: 10rem;
-  height: 8rem;
+  height: 7rem;
   width: auto;
 }
 
 .cristalBall4 {
   margin-top: 1rem;
   margin-left: 27rem;
-  height: 5.5rem;
+  height: 4.5rem;
   width: auto;
 }
 
 .cristalBall5 {
   margin-top: 9rem;
   margin-left: 46rem;
-  height: 5rem;
+  height: 4rem;
   width: auto;
 }
 
 .cristalBall6 {
   margin-top: 1.5rem;
   margin-left: 54rem;
-  height: 5.5rem;
+  height: 4.5rem;
   width: auto;
 }
 
 .cristalBall7 {
   margin-top: -1rem;
   margin-left: 38rem;
-  height: 4.5rem;
+  height: 3.5rem;
   width: auto;
 }
 

@@ -14,3 +14,18 @@ body {
   -1.5px 1.5px 0 black,
   1.5px 1.5px 0 black;
   }
+
+  h3 {
+    color: #2986cc;
+  }
+  
+  .describ ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+  }
+  
+  .describ ul li {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-decoration: underline;
+  }
