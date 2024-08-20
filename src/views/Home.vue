@@ -1,6 +1,6 @@
 <template>
+
   <div class="title-container">
-    <img src="/public/img/boule2.png" alt="dragon ball 2 étoiles" class="cristalBall2">
     <div class="title">
       <span class="warp__0">L</span>
       <span class="warp__1">e</span>
@@ -24,10 +24,16 @@
     </div>
   </div>
 
-  <div>
+  <div class="boules-container">
+    <img src="/public/img/boule2.png" alt="dragon ball 2 étoiles" class="cristalBall2">
     <img src="/public/img/boule1.png" alt="dragon ball 1 étoile" class="cristalBall">
+    <img src="/public/img/boule3.png" alt="dragon ball 3 étoiles" class="cristalBall3">
+    <img src="/public/img/boule4.png" alt="dragon ball 4 étoiles" class="cristalBall4">
+    <img src="/public/img/boule5.png" alt="dragon ball 5 étoiles" class="cristalBall5">
+    <img src="/public/img/boule7.png" alt="dragon ball 7 étoiles" class="cristalBall7">
+    <img src="/public/img/boule6.png" alt="dragon ball 6 étoiles" class="cristalBall6">
   </div>
-
+  
   <div>
     <ul>
       <li v-for="post in posts" :key="post.id">
@@ -64,8 +70,7 @@ export default {
 <style scoped>
 
 .title-container {
-  margin-top: 2rem;
-  margin-left: 12rem;
+  margin-left: 15rem;
 }
 
 .title {
@@ -106,20 +111,70 @@ export default {
 .warp__21 { transform: translate(430px, 120px) rotate(-0.14718rad); color: #53a3d7; }
 .warp__22 { font-size: 35px; color: yellow; transform: translate(465px, 110px) rotate(-0.02699rad); }
 
-.cristalBall {
-  height: 5rem;
+
+/* Positionnement des boules de cristal en ligne */
+.boules-container {
+  display: flex;
+  position: relative; /* positionnement personnalisé des images enfants */
+}
+
+.boules-container img {
+  position: absolute;
   width: auto;
-  margin-left: 5rem;
+}
+
+/* Positionnement personnalisé pour chaque boule */
+.cristalBall {
+  margin-top: -3rem;
+  margin-left: 15rem;
+  height: 6rem;
+  width: auto;
 }
 
 .cristalBall2 {
   height: 5rem;
   width: auto;
-  margin-bottom: 0.5rem;
+  margin-top: 0rem;
+  margin-left: 0rem;
+}
+
+.cristalBall3 {
+  margin-top: 7rem;
+  margin-left: 10rem;
+  height: 8rem;
+  width: auto;
+}
+
+.cristalBall4 {
+  margin-top: 1rem;
+  margin-left: 27rem;
+  height: 5.5rem;
+  width: auto;
+}
+
+.cristalBall5 {
+  margin-top: 9rem;
+  margin-left: 46rem;
+  height: 5rem;
+  width: auto;
+}
+
+.cristalBall6 {
+  margin-top: 1.5rem;
+  margin-left: 54rem;
+  height: 5.5rem;
+  width: auto;
+}
+
+.cristalBall7 {
+  margin-top: -1rem;
+  margin-left: 38rem;
+  height: 4.5rem;
+  width: auto;
 }
 
 ul {
-  margin-top: 10rem;
+  margin-top: 18rem;
   margin-left:2rem;
   padding: 0;
   list-style-type: none;
