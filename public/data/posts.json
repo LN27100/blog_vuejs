@@ -95,59 +95,59 @@
         },
         {
           "url": "/img/gohan-ecole-petit.jpg",
-          "title": "Sangoku Super Saiyan 1"
+          "title": "Gohan enfant à l'école"
         },
         {
           "url": "/img/gohan1.jpg",
-          "title": "Sangoku Super Saiyan 2"
+          "title": "Gohan enfant tenue traditionnelle"
         },
         {
           "url": "/img/gohan-désert.jpg",
-          "title": "Sangoku Super Saiyan 3"
+          "title": "Gohan enfant dans le désert"
         },
         {
           "url": "/img/gohan-enfant.png",
-          "title": "Sangoku God"
+          "title": "Gohan enfant entrainement avec Piccolo"
         },
         {
           "url": "/img/gohan-namek.jpg",
-          "title": "Sangoku Super Saiyan Blue"
+          "title": "Gohan enfant contre les Nameks"
         },
         {
           "url": "/img/gohan-ado1.jpg",
-          "title": "Sangoku Ultra Instinct"
+          "title": "Gohan adolescent"
         },
         {
           "url": "/img/gohan-ado.jpg",
-          "title": "Sangoku Super Saiyan 4"
+          "title": "Gohan Super Saiyan 2 adolescent"
         },
         {
           "url": "/img/gohan-ado2.png",
-          "title": "Sangoku Ultra Instinct"
+          "title": "Gohan à l'université"
         }, 
         {
           "url": "/img/gohan-guerrier-intergalactique.jpg",
-          "title": "Sangoku Ultra Instinct"
+          "title": "Gohan guerrier intergalactique"
         }, 
         {
           "url": "/img/gohan-ultime.jpeg",
-          "title": "Sangoku Ultra Instinct"
+          "title": "Gohan ultime"
         }, 
         {
           "url": "/img/gohan-ssj2-adulte.png",
-          "title": "Sangoku Ultra Instinct"
+          "title": "Gohan Super Saiyan 2 adulte"
         }, 
         {
           "url": "/img/gohan-épée.png",
-          "title": "Sangoku Ultra Instinct"
+          "title": "Gohan entrainement Kaiöshin"
         }, 
         {
           "url": "/img/gohan-joggingvert.jpg",
-          "title": "Sangoku Ultra Instinct"
+          "title": "Gohan adulte sans entrainement"
         },
         {
           "url": "/img/gohan-beast.png",
-          "title": "Sangoku Ultra Instinct"
+          "title": "Gohan Beast"
         }
 
       ]  },
@@ -158,7 +158,7 @@
     "content": "<p>Tortue Géniale, également connu sous le nom de Kame Sennin, est un maître des arts martiaux et le premier mentor de Goku.</p>",
 "images": [
       {
-        "url": "/img/sangoku.jpg"
+        "url": "/img/tortueGeniale.jpg"
       },
       {
         "url": "/img/gokussj1.jpeg",
@@ -196,7 +196,7 @@
     "content": "<p>Chichi est la femme de Goku et la mère de Gohan et Goten. Elle est connue pour son caractère fort et protecteur.</p>",
 "images": [
       {
-        "url": "/img/sangoku.jpg"
+        "url": "/img/chichi-adulte.jpg"
       },
       {
         "url": "/img/gokussj1.jpeg",
@@ -234,7 +234,7 @@
     "content": "<p>Goten est le deuxième fils de Goku, connu pour sa ressemblance avec son père et son amitié avec Trunks.</p>",
 "images": [
       {
-        "url": "/img/sangoku.jpg"
+        "url": "/img/goten.jpg"
       },
       {
         "url": "/img/gokussj1.jpeg",
@@ -272,7 +272,7 @@
     "content": "<p>Videl est la fille de Mr. Satan et la femme de Gohan, ainsi que la mère de Pan.</p>",
 "images": [
       {
-        "url": "/img/sangoku.jpg"
+        "url": "/img/videl.jpg"
       },
       {
         "url": "/img/gokussj1.jpeg",
@@ -310,7 +310,7 @@
     "content": "<p>Pan est la fille de Gohan et Videl, et la petite-fille de Goku. Elle est également une guerrière talentueuse.</p>",
 "images": [
       {
-        "url": "/img/sangoku.jpg"
+        "url": "/img/pan.jpg"
       },
       {
         "url": "/img/gokussj1.jpeg",
@@ -348,7 +348,7 @@
     "content": "<p>Bulma est une scientifique brillante, amie de Goku et la femme de Vegeta. Elle est l'une des premières alliées de Goku dans sa quête des Dragon Balls.</p>",
 "images": [
       {
-        "url": "/img/sangoku.jpg"
+        "url": "/img/bulma.jpg"
       },
       {
         "url": "/img/gokussj1.jpeg",
@@ -386,7 +386,7 @@
     "content": "<p>Trunks est le fils de Vegeta et Bulma. Il est un combattant puissant et ami proche de Goten.</p>",
 "images": [
       {
-        "url": "/img/sangoku.jpg"
+        "url": "/img/trunks.jpg"
       },
       {
         "url": "/img/gokussj1.jpeg",
@@ -424,7 +424,7 @@
     "content": "<p>Krillin est un ami proche de Goku et un combattant compétent. Il est marié à C18 et père de Marron.</p>",
 "images": [
       {
-        "url": "/img/sangoku.jpg"
+        "url": "/img/krillin.jpg"
       },
       {
         "url": "/img/gokussj1.jpeg",
@@ -462,7 +462,7 @@
     "content": "<p>C18, autrefois connue sous le nom de Lazuli, est un cyborg et la femme de Krillin. Elle est également une combattante redoutable.</p>",
 "images": [
       {
-        "url": "/img/sangoku.jpg"
+        "url": "/img/c18.jpg"
       },
       {
         "url": "/img/gokussj1.jpeg",
@@ -500,7 +500,7 @@
     "content": "<p>Marron est la fille de Krillin et C18. Contrairement à ses parents, elle ne montre pas d'intérêt particulier pour le combat.</p>",
 "images": [
       {
-        "url": "/img/sangoku.jpg"
+        "url": "/img/marron.jpg"
       },
       {
         "url": "/img/gokussj1.jpeg",
@@ -538,7 +538,7 @@
     "content": "<p>Yamcha est un ancien bandit du désert et ami de Goku. Bien qu'il soit moins puissant que les autres guerriers Z, il reste un combattant compétent.</p>",
 "images": [
       {
-        "url": "/img/sangoku.jpg"
+        "url": "/img/yamcha.jpg"
       },
       {
         "url": "/img/gokussj1.jpeg",
