@@ -151,6 +151,70 @@
         }
 
       ]  },
+      {
+        "id": 6,
+        "title": "Sangoten",
+        "summary": "Deuxième fils de Goku, ami de Trunks.",
+        "content": "<p>Goten est le deuxième fils de Goku, connu pour sa ressemblance avec son père et son amitié avec Trunks.</p>",
+    "images": [
+          {
+            "url": "/img/goten.png"
+          },
+          {
+            "url": "/img/goten-petit.jpg",
+            "title": "Goten petit enfant"
+          },
+          {
+            "url": "/img/goten-ssj2.png",
+            "title": "Goten Super Saiyan 2"
+          },
+          {
+            "url": "/img/goten-ado.png",
+            "title": "Goten adolescent série"
+          },
+          {
+            "url": "/img/goten-ado-superHero.png",
+            "title": "Goten adolescent film"
+          },
+          {
+            "url": "/img/goten-jeuneAdulte.jpg",
+            "title": "Goten jeune adulte"
+          },
+          {
+            "url": "/img/goten-méchant.png",
+            "title": "Goten possédé par le mal"
+          }
+        ]  },
+        {
+          "id": 4,
+          "title": "Chichi",
+          "summary": "Femme de Goku, mère de Gohan et Goten.",
+          "content": "<p>Chichi est la femme de Goku et la mère de Gohan et Goten. Elle est connue pour son caractère fort et protecteur.</p>",
+      "images": [
+            {
+              "url": "/img/chichi.jpg"
+            },
+            {
+              "url": "/img/chichi-enfant.png",
+              "title": "Chichi enfant"
+            },
+            {
+              "url": "/img/chichi-jeuneAdulte.png",
+              "title": "Chichi jeune adulte"
+            },
+            {
+              "url": "/img/chichi-mariage.jpg",
+              "title": "Mariage Chichi et Goku"
+            },
+            {
+              "url": "/img/chichi-colère.jpg",
+              "title": "Les colères de Chichi"
+            },
+            {
+              "url": "/img/chichi-adulte.jpg",
+              "title": "Chichi adulte"
+            }
+          ]  },      
   {
     "id": 3,
     "title": "Tortue Géniale",
@@ -161,108 +225,20 @@
         "url": "/img/tortueGeniale.jpg"
       },
       {
-        "url": "/img/gokussj1.jpeg",
-        "title": "Sangoku Super Saiyan 1"
+        "url": "/img/tortue-geniale-pervers.jpg",
+        "title": "Tortue géniale devant les femmes"
       },
       {
-        "url": "/img/gokussj2.png",
-        "title": "Sangoku Super Saiyan 2"
+        "url": "/img/tortue-geniale-sansCarapace.jpg",
+        "title": "Tortue Géniale sans sa carapace"
       },
       {
-        "url": "/img/gokussj3.jpeg",
-        "title": "Sangoku Super Saiyan 3"
+        "url": "/img/tortue-geniale-muscles.jpg",
+        "title": "Transformation de Tortue Géniale"
       },
       {
-        "url": "/img/gokugod.jpeg",
-        "title": "Sangoku God"
-      },
-      {
-        "url": "/img/gokusupersaiyanblue.png",
-        "title": "Sangoku Super Saiyan Blue"
-      },
-      {
-        "url": "/img/goku-ultrainstinct.jpg",
-        "title": "Sangoku Ultra Instinct"
-      },
-      {
-        "url": "/img/gokussj4.png",
-        "title": "Sangoku Super Saiyan 4"
-      }
-    ]  },
-  {
-    "id": 4,
-    "title": "Chichi",
-    "summary": "Femme de Goku, mère de Gohan et Goten.",
-    "content": "<p>Chichi est la femme de Goku et la mère de Gohan et Goten. Elle est connue pour son caractère fort et protecteur.</p>",
-"images": [
-      {
-        "url": "/img/chichi-adulte.jpg"
-      },
-      {
-        "url": "/img/gokussj1.jpeg",
-        "title": "Sangoku Super Saiyan 1"
-      },
-      {
-        "url": "/img/gokussj2.png",
-        "title": "Sangoku Super Saiyan 2"
-      },
-      {
-        "url": "/img/gokussj3.jpeg",
-        "title": "Sangoku Super Saiyan 3"
-      },
-      {
-        "url": "/img/gokugod.jpeg",
-        "title": "Sangoku God"
-      },
-      {
-        "url": "/img/gokusupersaiyanblue.png",
-        "title": "Sangoku Super Saiyan Blue"
-      },
-      {
-        "url": "/img/goku-ultrainstinct.jpg",
-        "title": "Sangoku Ultra Instinct"
-      },
-      {
-        "url": "/img/gokussj4.png",
-        "title": "Sangoku Super Saiyan 4"
-      }
-    ]  },
-  {
-    "id": 6,
-    "title": "Sangoten",
-    "summary": "Deuxième fils de Goku, ami de Trunks.",
-    "content": "<p>Goten est le deuxième fils de Goku, connu pour sa ressemblance avec son père et son amitié avec Trunks.</p>",
-"images": [
-      {
-        "url": "/img/goten.jpg"
-      },
-      {
-        "url": "/img/gokussj1.jpeg",
-        "title": "Sangoku Super Saiyan 1"
-      },
-      {
-        "url": "/img/gokussj2.png",
-        "title": "Sangoku Super Saiyan 2"
-      },
-      {
-        "url": "/img/gokussj3.jpeg",
-        "title": "Sangoku Super Saiyan 3"
-      },
-      {
-        "url": "/img/gokugod.jpeg",
-        "title": "Sangoku God"
-      },
-      {
-        "url": "/img/gokusupersaiyanblue.png",
-        "title": "Sangoku Super Saiyan Blue"
-      },
-      {
-        "url": "/img/goku-ultrainstinct.jpg",
-        "title": "Sangoku Ultra Instinct"
-      },
-      {
-        "url": "/img/gokussj4.png",
-        "title": "Sangoku Super Saiyan 4"
+        "url": "/img/tortue-geniale-jackieChun.jpg",
+        "title": "Jackie Chun (Tortue Géniale déguisé)"
       }
     ]  },
   {
@@ -275,32 +251,20 @@
         "url": "/img/videl.jpg"
       },
       {
-        "url": "/img/gokussj1.jpeg",
-        "title": "Sangoku Super Saiyan 1"
+        "url": "/img/videl-combattante.jpg",
+        "title": "Videl en combat"
       },
       {
-        "url": "/img/gokussj2.png",
-        "title": "Sangoku Super Saiyan 2"
+        "url": "/img/videl-intergalactique.png",
+        "title": "Videl guerrière intergalactique"
       },
       {
-        "url": "/img/gokussj3.jpeg",
-        "title": "Sangoku Super Saiyan 3"
+        "url": "/img/videl-cheveuxCourts.png",
+        "title": "Videl jeune adulte"
       },
       {
-        "url": "/img/gokugod.jpeg",
-        "title": "Sangoku God"
-      },
-      {
-        "url": "/img/gokusupersaiyanblue.png",
-        "title": "Sangoku Super Saiyan Blue"
-      },
-      {
-        "url": "/img/goku-ultrainstinct.jpg",
-        "title": "Sangoku Ultra Instinct"
-      },
-      {
-        "url": "/img/gokussj4.png",
-        "title": "Sangoku Super Saiyan 4"
+        "url": "/img/videl-adulte.jpg",
+        "title": "Videl adulte"
       }
     ]  },
   {
@@ -313,32 +277,20 @@
         "url": "/img/pan.jpg"
       },
       {
-        "url": "/img/gokussj1.jpeg",
-        "title": "Sangoku Super Saiyan 1"
+        "url": "/img/pan-bébé.jpg",
+        "title": "Pan bébé"
       },
       {
-        "url": "/img/gokussj2.png",
-        "title": "Sangoku Super Saiyan 2"
+        "url": "/img/pan-petiteFille.jpg",
+        "title": "Pan petite"
       },
       {
-        "url": "/img/gokussj3.jpeg",
-        "title": "Sangoku Super Saiyan 3"
+        "url": "/img/pan-enfant.png",
+        "title": "Pan enfant"
       },
       {
-        "url": "/img/gokugod.jpeg",
-        "title": "Sangoku God"
-      },
-      {
-        "url": "/img/gokusupersaiyanblue.png",
-        "title": "Sangoku Super Saiyan Blue"
-      },
-      {
-        "url": "/img/goku-ultrainstinct.jpg",
-        "title": "Sangoku Ultra Instinct"
-      },
-      {
-        "url": "/img/gokussj4.png",
-        "title": "Sangoku Super Saiyan 4"
+        "url": "/img/pan-ado.jpg",
+        "title": "Pan adolescente"
       }
     ]  },
   {
