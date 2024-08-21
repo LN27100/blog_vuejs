@@ -43,90 +43,530 @@
     "title": "Vegeta",
     "summary": "Prince de la planète Végéta et rival de Goku.",
     "content": "<p>Végéta est le prince de la planète Végéta, un Saiyan puissant et rival de Goku.</p>",
-    "image": "/img/vegeta.png"
-  },
+"images": [
+      {
+        "url": "/img/vegeta1.jpg"
+      },
+      {
+        "url": "/img/vegeta2.png",
+        "title": "Vegeta arrivée sur terre"
+      },
+      {
+        "url": "/img/vegetaoozaru.jpg",
+        "title": "Vegeta Oozaru gorille"
+      },
+    {
+      "url": "/img/vegetasupersaiyan.png",
+      "title": "Vegeta Super Saiyan"
+    },
+      {
+        "url": "/img/vegeta-ssj2.jpg",
+        "title": "Vegeta Super Saiyan 2"
+      },
+      {
+        "url": "/img/vegeta-supersaiyanblue.jpg",
+        "title": "Vegeta Super Saiyan blue"
+      },
+      {
+        "url": "/img/vegeta-supersaiyan-blue-evolution.jpg",
+        "title": "Vegeta Super Saiyan blue evolution"
+      },
+      {
+        "url": "/img/vegeta-super-saiyangod.jpg",
+        "title": "Vegeta Super Saiyan God"
+      },
+      {
+        "url": "/img/vegeta-ultraego.jpg",
+        "title": "Vegeta Ultra Ego"
+      },
+      {
+        "url": "/img/vegeta-ssj4.png",
+        "title": "Vegeta Super Saiyan 4"
+      }
+    ]  },
+    {
+      "id": 5,
+      "title": "Sangohan",
+      "summary": "Premier fils de Goku possédant un immense potentiel.",
+      "content": "<p>Gohan est le premier fils de Goku et Chichi, connu pour son immense potentiel de puissance.</p>",
+  "images": [
+        {
+          "url": "/img/gohan-superheros.jpeg"
+        },
+        {
+          "url": "/img/gohan-ecole-petit.jpg",
+          "title": "Sangoku Super Saiyan 1"
+        },
+        {
+          "url": "/img/gohan1.jpg",
+          "title": "Sangoku Super Saiyan 2"
+        },
+        {
+          "url": "/img/gohan-désert.jpg",
+          "title": "Sangoku Super Saiyan 3"
+        },
+        {
+          "url": "/img/gohan-enfant.png",
+          "title": "Sangoku God"
+        },
+        {
+          "url": "/img/gohan-namek.jpg",
+          "title": "Sangoku Super Saiyan Blue"
+        },
+        {
+          "url": "/img/gohan-ado1.jpg",
+          "title": "Sangoku Ultra Instinct"
+        },
+        {
+          "url": "/img/gohan-ado.jpg",
+          "title": "Sangoku Super Saiyan 4"
+        },
+        {
+          "url": "/img/gohan-ado2.png",
+          "title": "Sangoku Ultra Instinct"
+        }, 
+        {
+          "url": "/img/gohan-guerrier-intergalactique.jpg",
+          "title": "Sangoku Ultra Instinct"
+        }, 
+        {
+          "url": "/img/gohan-ultime.jpeg",
+          "title": "Sangoku Ultra Instinct"
+        }, 
+        {
+          "url": "/img/gohan-ssj2-adulte.png",
+          "title": "Sangoku Ultra Instinct"
+        }, 
+        {
+          "url": "/img/gohan-épée.png",
+          "title": "Sangoku Ultra Instinct"
+        }, 
+        {
+          "url": "/img/gohan-joggingvert.jpg",
+          "title": "Sangoku Ultra Instinct"
+        },
+        {
+          "url": "/img/gohan-beast.png",
+          "title": "Sangoku Ultra Instinct"
+        }
+
+      ]  },
   {
     "id": 3,
     "title": "Tortue Géniale",
     "summary": "Maître des arts martiaux et premier mentor de Goku.",
     "content": "<p>Tortue Géniale, également connu sous le nom de Kame Sennin, est un maître des arts martiaux et le premier mentor de Goku.</p>",
-    "image": "/img/tortueGeniale.jpg"
-  },
+"images": [
+      {
+        "url": "/img/sangoku.jpg"
+      },
+      {
+        "url": "/img/gokussj1.jpeg",
+        "title": "Sangoku Super Saiyan 1"
+      },
+      {
+        "url": "/img/gokussj2.png",
+        "title": "Sangoku Super Saiyan 2"
+      },
+      {
+        "url": "/img/gokussj3.jpeg",
+        "title": "Sangoku Super Saiyan 3"
+      },
+      {
+        "url": "/img/gokugod.jpeg",
+        "title": "Sangoku God"
+      },
+      {
+        "url": "/img/gokusupersaiyanblue.png",
+        "title": "Sangoku Super Saiyan Blue"
+      },
+      {
+        "url": "/img/goku-ultrainstinct.jpg",
+        "title": "Sangoku Ultra Instinct"
+      },
+      {
+        "url": "/img/gokussj4.png",
+        "title": "Sangoku Super Saiyan 4"
+      }
+    ]  },
   {
     "id": 4,
     "title": "Chichi",
     "summary": "Femme de Goku, mère de Gohan et Goten.",
     "content": "<p>Chichi est la femme de Goku et la mère de Gohan et Goten. Elle est connue pour son caractère fort et protecteur.</p>",
-    "image": "/img/chichi.jpg"
-  },
-  {
-    "id": 5,
-    "title": "Sangohan",
-    "summary": "Premier fils de Goku avec un immense potentiel.",
-    "content": "<p>Gohan est le premier fils de Goku et Chichi, connu pour son immense potentiel de puissance.</p>",
-    "image": "/img/sangohan.jpg"
-  },
+"images": [
+      {
+        "url": "/img/sangoku.jpg"
+      },
+      {
+        "url": "/img/gokussj1.jpeg",
+        "title": "Sangoku Super Saiyan 1"
+      },
+      {
+        "url": "/img/gokussj2.png",
+        "title": "Sangoku Super Saiyan 2"
+      },
+      {
+        "url": "/img/gokussj3.jpeg",
+        "title": "Sangoku Super Saiyan 3"
+      },
+      {
+        "url": "/img/gokugod.jpeg",
+        "title": "Sangoku God"
+      },
+      {
+        "url": "/img/gokusupersaiyanblue.png",
+        "title": "Sangoku Super Saiyan Blue"
+      },
+      {
+        "url": "/img/goku-ultrainstinct.jpg",
+        "title": "Sangoku Ultra Instinct"
+      },
+      {
+        "url": "/img/gokussj4.png",
+        "title": "Sangoku Super Saiyan 4"
+      }
+    ]  },
   {
     "id": 6,
     "title": "Sangoten",
     "summary": "Deuxième fils de Goku, ami de Trunks.",
     "content": "<p>Goten est le deuxième fils de Goku, connu pour sa ressemblance avec son père et son amitié avec Trunks.</p>",
-    "image": "/img/sangoten.jpg"
-  },
+"images": [
+      {
+        "url": "/img/sangoku.jpg"
+      },
+      {
+        "url": "/img/gokussj1.jpeg",
+        "title": "Sangoku Super Saiyan 1"
+      },
+      {
+        "url": "/img/gokussj2.png",
+        "title": "Sangoku Super Saiyan 2"
+      },
+      {
+        "url": "/img/gokussj3.jpeg",
+        "title": "Sangoku Super Saiyan 3"
+      },
+      {
+        "url": "/img/gokugod.jpeg",
+        "title": "Sangoku God"
+      },
+      {
+        "url": "/img/gokusupersaiyanblue.png",
+        "title": "Sangoku Super Saiyan Blue"
+      },
+      {
+        "url": "/img/goku-ultrainstinct.jpg",
+        "title": "Sangoku Ultra Instinct"
+      },
+      {
+        "url": "/img/gokussj4.png",
+        "title": "Sangoku Super Saiyan 4"
+      }
+    ]  },
   {
     "id": 7,
     "title": "Videl",
     "summary": "Fille de Mr. Satan et femme de Gohan.",
     "content": "<p>Videl est la fille de Mr. Satan et la femme de Gohan, ainsi que la mère de Pan.</p>",
-    "image": "/img/videl.jpg"
-  },
+"images": [
+      {
+        "url": "/img/sangoku.jpg"
+      },
+      {
+        "url": "/img/gokussj1.jpeg",
+        "title": "Sangoku Super Saiyan 1"
+      },
+      {
+        "url": "/img/gokussj2.png",
+        "title": "Sangoku Super Saiyan 2"
+      },
+      {
+        "url": "/img/gokussj3.jpeg",
+        "title": "Sangoku Super Saiyan 3"
+      },
+      {
+        "url": "/img/gokugod.jpeg",
+        "title": "Sangoku God"
+      },
+      {
+        "url": "/img/gokusupersaiyanblue.png",
+        "title": "Sangoku Super Saiyan Blue"
+      },
+      {
+        "url": "/img/goku-ultrainstinct.jpg",
+        "title": "Sangoku Ultra Instinct"
+      },
+      {
+        "url": "/img/gokussj4.png",
+        "title": "Sangoku Super Saiyan 4"
+      }
+    ]  },
   {
     "id": 8,
     "title": "Pan",
     "summary": "Fille de Gohan, petite-fille de Goku.",
     "content": "<p>Pan est la fille de Gohan et Videl, et la petite-fille de Goku. Elle est également une guerrière talentueuse.</p>",
-    "image": "/img/pan.jpg"
-  },
+"images": [
+      {
+        "url": "/img/sangoku.jpg"
+      },
+      {
+        "url": "/img/gokussj1.jpeg",
+        "title": "Sangoku Super Saiyan 1"
+      },
+      {
+        "url": "/img/gokussj2.png",
+        "title": "Sangoku Super Saiyan 2"
+      },
+      {
+        "url": "/img/gokussj3.jpeg",
+        "title": "Sangoku Super Saiyan 3"
+      },
+      {
+        "url": "/img/gokugod.jpeg",
+        "title": "Sangoku God"
+      },
+      {
+        "url": "/img/gokusupersaiyanblue.png",
+        "title": "Sangoku Super Saiyan Blue"
+      },
+      {
+        "url": "/img/goku-ultrainstinct.jpg",
+        "title": "Sangoku Ultra Instinct"
+      },
+      {
+        "url": "/img/gokussj4.png",
+        "title": "Sangoku Super Saiyan 4"
+      }
+    ]  },
   {
     "id": 9,
     "title": "Bulma",
     "summary": "Scientifique brillante et femme de Vegeta.",
     "content": "<p>Bulma est une scientifique brillante, amie de Goku et la femme de Vegeta. Elle est l'une des premières alliées de Goku dans sa quête des Dragon Balls.</p>",
-    "image": "/img/bulma.jpg"
-  },
+"images": [
+      {
+        "url": "/img/sangoku.jpg"
+      },
+      {
+        "url": "/img/gokussj1.jpeg",
+        "title": "Sangoku Super Saiyan 1"
+      },
+      {
+        "url": "/img/gokussj2.png",
+        "title": "Sangoku Super Saiyan 2"
+      },
+      {
+        "url": "/img/gokussj3.jpeg",
+        "title": "Sangoku Super Saiyan 3"
+      },
+      {
+        "url": "/img/gokugod.jpeg",
+        "title": "Sangoku God"
+      },
+      {
+        "url": "/img/gokusupersaiyanblue.png",
+        "title": "Sangoku Super Saiyan Blue"
+      },
+      {
+        "url": "/img/goku-ultrainstinct.jpg",
+        "title": "Sangoku Ultra Instinct"
+      },
+      {
+        "url": "/img/gokussj4.png",
+        "title": "Sangoku Super Saiyan 4"
+      }
+    ]  },
   {
     "id": 10,
     "title": "Trunks",
     "summary": "Fils de Vegeta et Bulma, ami de Goten.",
     "content": "<p>Trunks est le fils de Vegeta et Bulma. Il est un combattant puissant et ami proche de Goten.</p>",
-    "image": "/img/trunks.jpg"
-  },
+"images": [
+      {
+        "url": "/img/sangoku.jpg"
+      },
+      {
+        "url": "/img/gokussj1.jpeg",
+        "title": "Sangoku Super Saiyan 1"
+      },
+      {
+        "url": "/img/gokussj2.png",
+        "title": "Sangoku Super Saiyan 2"
+      },
+      {
+        "url": "/img/gokussj3.jpeg",
+        "title": "Sangoku Super Saiyan 3"
+      },
+      {
+        "url": "/img/gokugod.jpeg",
+        "title": "Sangoku God"
+      },
+      {
+        "url": "/img/gokusupersaiyanblue.png",
+        "title": "Sangoku Super Saiyan Blue"
+      },
+      {
+        "url": "/img/goku-ultrainstinct.jpg",
+        "title": "Sangoku Ultra Instinct"
+      },
+      {
+        "url": "/img/gokussj4.png",
+        "title": "Sangoku Super Saiyan 4"
+      }
+    ]  },
   {
     "id": 11,
     "title": "Krillin",
     "summary": "Ami proche de Goku et mari de C18.",
     "content": "<p>Krillin est un ami proche de Goku et un combattant compétent. Il est marié à C18 et père de Marron.</p>",
-    "image": "/img/krillin.jpg"
-  },
+"images": [
+      {
+        "url": "/img/sangoku.jpg"
+      },
+      {
+        "url": "/img/gokussj1.jpeg",
+        "title": "Sangoku Super Saiyan 1"
+      },
+      {
+        "url": "/img/gokussj2.png",
+        "title": "Sangoku Super Saiyan 2"
+      },
+      {
+        "url": "/img/gokussj3.jpeg",
+        "title": "Sangoku Super Saiyan 3"
+      },
+      {
+        "url": "/img/gokugod.jpeg",
+        "title": "Sangoku God"
+      },
+      {
+        "url": "/img/gokusupersaiyanblue.png",
+        "title": "Sangoku Super Saiyan Blue"
+      },
+      {
+        "url": "/img/goku-ultrainstinct.jpg",
+        "title": "Sangoku Ultra Instinct"
+      },
+      {
+        "url": "/img/gokussj4.png",
+        "title": "Sangoku Super Saiyan 4"
+      }
+    ]  },
   {
     "id": 12,
     "title": "C18",
     "summary": "Cyborg et femme de Krillin.",
     "content": "<p>C18, autrefois connue sous le nom de Lazuli, est un cyborg et la femme de Krillin. Elle est également une combattante redoutable.</p>",
-    "image": "/img/c18.jpg"
-  },
+"images": [
+      {
+        "url": "/img/sangoku.jpg"
+      },
+      {
+        "url": "/img/gokussj1.jpeg",
+        "title": "Sangoku Super Saiyan 1"
+      },
+      {
+        "url": "/img/gokussj2.png",
+        "title": "Sangoku Super Saiyan 2"
+      },
+      {
+        "url": "/img/gokussj3.jpeg",
+        "title": "Sangoku Super Saiyan 3"
+      },
+      {
+        "url": "/img/gokugod.jpeg",
+        "title": "Sangoku God"
+      },
+      {
+        "url": "/img/gokusupersaiyanblue.png",
+        "title": "Sangoku Super Saiyan Blue"
+      },
+      {
+        "url": "/img/goku-ultrainstinct.jpg",
+        "title": "Sangoku Ultra Instinct"
+      },
+      {
+        "url": "/img/gokussj4.png",
+        "title": "Sangoku Super Saiyan 4"
+      }
+    ]  },
   {
     "id": 13,
     "title": "Marron",
     "summary": "Fille de Krillin et C18, non intéressée par le combat.",
     "content": "<p>Marron est la fille de Krillin et C18. Contrairement à ses parents, elle ne montre pas d'intérêt particulier pour le combat.</p>",
-    "image": "/img/marron.jpg"
-  },
+"images": [
+      {
+        "url": "/img/sangoku.jpg"
+      },
+      {
+        "url": "/img/gokussj1.jpeg",
+        "title": "Sangoku Super Saiyan 1"
+      },
+      {
+        "url": "/img/gokussj2.png",
+        "title": "Sangoku Super Saiyan 2"
+      },
+      {
+        "url": "/img/gokussj3.jpeg",
+        "title": "Sangoku Super Saiyan 3"
+      },
+      {
+        "url": "/img/gokugod.jpeg",
+        "title": "Sangoku God"
+      },
+      {
+        "url": "/img/gokusupersaiyanblue.png",
+        "title": "Sangoku Super Saiyan Blue"
+      },
+      {
+        "url": "/img/goku-ultrainstinct.jpg",
+        "title": "Sangoku Ultra Instinct"
+      },
+      {
+        "url": "/img/gokussj4.png",
+        "title": "Sangoku Super Saiyan 4"
+      }
+    ]  },
   {
     "id": 14,
     "title": "Yamcha",
     "summary": "Ancien bandit du désert, ami de Goku.",
     "content": "<p>Yamcha est un ancien bandit du désert et ami de Goku. Bien qu'il soit moins puissant que les autres guerriers Z, il reste un combattant compétent.</p>",
-    "image": "/img/yamcha.jpg"
-  }
+"images": [
+      {
+        "url": "/img/sangoku.jpg"
+      },
+      {
+        "url": "/img/gokussj1.jpeg",
+        "title": "Sangoku Super Saiyan 1"
+      },
+      {
+        "url": "/img/gokussj2.png",
+        "title": "Sangoku Super Saiyan 2"
+      },
+      {
+        "url": "/img/gokussj3.jpeg",
+        "title": "Sangoku Super Saiyan 3"
+      },
+      {
+        "url": "/img/gokugod.jpeg",
+        "title": "Sangoku God"
+      },
+      {
+        "url": "/img/gokusupersaiyanblue.png",
+        "title": "Sangoku Super Saiyan Blue"
+      },
+      {
+        "url": "/img/goku-ultrainstinct.jpg",
+        "title": "Sangoku Ultra Instinct"
+      },
+      {
+        "url": "/img/gokussj4.png",
+        "title": "Sangoku Super Saiyan 4"
+      }
+    ]  }
 ]
