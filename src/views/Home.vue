@@ -1,49 +1,50 @@
 <template>
-
-  <div class="title-container">
-    <div class="title">
-      <span class="warp__0">L</span>
-      <span class="warp__1">e</span>
-      <span class="warp__3">b</span>
-      <span class="warp__4">l</span>
-      <span class="warp__5">o</span>
-      <span class="warp__6">g</span>
-      <span class="warp__8">d</span>
-      <span class="warp__9">e</span>
-      <span class="warp__11">D</span>
-      <span class="warp__12">r</span>
-      <span class="warp__13">a</span>
-      <span class="warp__14">g</span>
-      <span class="warp__15">o</span>
-      <span class="warp__16">n</span>
-      <span class="warp__18">B</span>
-      <span class="warp__19">a</span>
-      <span class="warp__20">l</span>
-      <span class="warp__21">l</span>
-      <span class="warp__22">Z</span>
+  <div>
+    <div class="title-container">
+      <div class="title">
+        <!-- Titre du blog -->
+        <span class="warp__0">L</span>
+        <span class="warp__1">e</span>
+        <span class="warp__3">b</span>
+        <span class="warp__4">l</span>
+        <span class="warp__5">o</span>
+        <span class="warp__6">g</span>
+        <span class="warp__8">d</span>
+        <span class="warp__9">e</span>
+        <span class="warp__11">D</span>
+        <span class="warp__12">r</span>
+        <span class="warp__13">a</span>
+        <span class="warp__14">g</span>
+        <span class="warp__15">o</span>
+        <span class="warp__16">n</span>
+        <span class="warp__18">B</span>
+        <span class="warp__19">a</span>
+        <span class="warp__20">l</span>
+        <span class="warp__21">l</span>
+        <span class="warp__22">Z</span>
+      </div>
     </div>
-  </div>
 
-  <div class="boules-container">
-    <img src="/public/img/boule2.png" alt="dragon ball 2 étoiles" class="cristalBall2">
-    <img src="/public/img/boule1.png" alt="dragon ball 1 étoile" class="cristalBall">
-    <img src="/public/img/boule3.png" alt="dragon ball 3 étoiles" class="cristalBall3">
-    <img src="/public/img/boule4.png" alt="dragon ball 4 étoiles" class="cristalBall4">
-    <img src="/public/img/boule5.png" alt="dragon ball 5 étoiles" class="cristalBall5">
-    <img src="/public/img/boule7.png" alt="dragon ball 7 étoiles" class="cristalBall7">
-    <img src="/public/img/boule6.png" alt="dragon ball 6 étoiles" class="cristalBall6">
-  </div>
+    <div class="boules-container">
+      <!-- Utilisez des chemins relatifs pour les images dans le répertoire public -->
+      <img src="/img/boule2.png" alt="dragon ball 2 étoiles" class="cristalBall2">
+      <img src="/img/boule1.png" alt="dragon ball 1 étoile" class="cristalBall">
+      <img src="/img/boule3.png" alt="dragon ball 3 étoiles" class="cristalBall3">
+      <img src="/img/boule4.png" alt="dragon ball 4 étoiles" class="cristalBall4">
+      <img src="/img/boule5.png" alt="dragon ball 5 étoiles" class="cristalBall5">
+      <img src="/img/boule7.png" alt="dragon ball 7 étoiles" class="cristalBall7">
+      <img src="/img/boule6.png" alt="dragon ball 6 étoiles" class="cristalBall6">
+    </div>
 
-
-  <div class="customAccordion">
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-          aria-expanded="true" aria-controls="collapseOne">Personnages</button>
-      </h2>
-      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <div>
+    <div class="customAccordion">
+      <!-- Accordéon pour les sections -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">Personnages</button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
             <ul>
               <li v-for="post in posts" :key="post.id">
                 <router-link :to="{ name: 'Post', params: { id: post.id } }">
@@ -55,40 +56,45 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-          aria-expanded="false" aria-controls="collapseTwo">
-          Transformations </button>
-      </h2>
-      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin
-          adds the appropriate classes that we use to style each element.
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+            aria-expanded="false" aria-controls="collapseTwo">
+            Techniques de combat et pouvoirs</button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul>
+              <li v-for="post in posts2" :key="post.id">
+                <router-link :to="{ name: 'Post2', params: { id: post.id } }">
+                  {{ post.title }}
+                </router-link>
+                <p>{{ post.summary }}</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Combats </button>
-      </h2>
-      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
-          adds the appropriate classes that we use to style each element.
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Combats</button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
+            adds the appropriate classes that we use to style each element.
+          </div>
         </div>
       </div>
     </div>
   </div>
-
-
 </template>
 
-
 <script>
+import posts2 from '@/data/posts2.json';
+
 export default {
   props: {
     posts: {
@@ -98,9 +104,8 @@ export default {
   },
   data() {
     return {
-      // Créer une copie pour une utilisation interne
-      //Cette copie (localPosts) peut être manipulée (triée, filtrée, etc.) sans affecter directement le tableau original posts reçu du parent.
-      localPosts: this.posts.slice()
+      localPosts: this.posts.slice(), // Une copie pour une utilisation interne
+      posts2: posts2 // Charger les données de posts2.json
     };
   }
 }
@@ -313,6 +318,12 @@ export default {
   --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
 }
 
+/* cibler l'élément accordion-button en mode focus pour ajouter un bord arrondi*/
+.customAccordion .accordion-button:focus {
+  border-radius: 5px; 
+  box-shadow: var(--bs-accordion-btn-focus-box-shadow);
+}
+
 .accordion-button:not(.collapsed) {
   background-color: #F89544;
   font-weight: bold;
@@ -322,6 +333,7 @@ export default {
 .accordion-item {
   background-color: #F89544;
   border: solid 1px #a43131;
+  border-radius: 5px;
 
 }
 
