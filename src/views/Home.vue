@@ -33,17 +33,58 @@
     <img src="/public/img/boule7.png" alt="dragon ball 7 étoiles" class="cristalBall7">
     <img src="/public/img/boule6.png" alt="dragon ball 6 étoiles" class="cristalBall6">
   </div>
-  
-  <div>
-    <ul>
-      <li v-for="post in posts" :key="post.id">
-        <router-link :to="{ name: 'Post', params: { id: post.id } }">
-          {{ post.title }}
-        </router-link>
-        <p>{{ post.summary }}</p>
-      </li>
-    </ul>
+
+
+  <div class="customAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+          aria-expanded="true" aria-controls="collapseOne">Personnages</button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <div>
+            <ul>
+              <li v-for="post in posts" :key="post.id">
+                <router-link :to="{ name: 'Post', params: { id: post.id } }">
+                  {{ post.title }}
+                </router-link>
+                <p>{{ post.summary }}</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+          aria-expanded="false" aria-controls="collapseTwo">
+          Transformations </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin
+          adds the appropriate classes that we use to style each element.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Combats </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
+          adds the appropriate classes that we use to style each element.
+        </div>
+      </div>
+    </div>
   </div>
+
+
 </template>
 
 
@@ -68,7 +109,6 @@ export default {
 
 
 <style scoped>
-
 .title-container {
   margin-left: 15rem;
 }
@@ -80,8 +120,8 @@ export default {
   font-family: 'Chelsea Market', cursive;
   font-weight: bold;
   color: #005a99;
-  text-shadow: -1.5px -1.5px 0 black, 1.5px -1.5px 0 black, 
-               -1.5px 1.5px 0 black, 1.5px 1.5px 0 black;
+  text-shadow: -1.5px -1.5px 0 black, 1.5px -1.5px 0 black,
+    -1.5px 1.5px 0 black, 1.5px 1.5px 0 black;
   margin-top: 0.5rem;
 }
 
@@ -91,31 +131,102 @@ export default {
 }
 
 /* transformations spécifiques */
-.warp__0 { transform: translate(20px, 90px) rotate(1.041106rad); }
-.warp__1 { transform: translate(30px, 110px) rotate(0.952006rad); }
-.warp__3 { transform: translate(60px, 150px) rotate(0.705882rad); }
-.warp__4 { transform: translate(80px, 168px) rotate(0.600926rad); }
-.warp__5 { transform: translate(90px, 180px) rotate(0.49481rad); }
-.warp__6 { transform: translate(110px, 190px) rotate(0.350878rad); }
-.warp__8 { transform: translate(150px, 195px) rotate(0.094828rad); color: #007acc; }
-.warp__9 { transform: translate(170px, 195px) rotate(-0.01024rad); color: #007acc; }
-.warp__11 { transform: translate(215px, 190px) rotate(-0.1833rad); color: #007acc; }
-.warp__12 { transform: translate(240px, 185px) rotate(-0.242992rad); color: #007acc; }
-.warp__13 { transform: translate(261px, 180px) rotate(-0.294055rad); color: #007acc; }
-.warp__14 { transform: translate(285px, 170px) rotate(-0.345868rad); color: #53a3d7; }
-.warp__15 { transform: translate(305px, 160px) rotate(-0.358303rad); color: #53a3d7; }
-.warp__16 { transform: translate(325px, 150px) rotate(-0.327675rad); color: #53a3d7; }
-.warp__18 { transform: translate(370px, 135px) rotate(-0.256447rad); color: #53a3d7; }
-.warp__19 { transform: translate(392px, 130px) rotate(-0.212781rad); color: #53a3d7; }
-.warp__20 { transform: translate(415px, 125px) rotate(-0.174111rad); color: #53a3d7; }
-.warp__21 { transform: translate(430px, 120px) rotate(-0.14718rad); color: #53a3d7; }
-.warp__22 { font-size: 35px; color: yellow; transform: translate(465px, 110px) rotate(-0.02699rad); }
+.warp__0 {
+  transform: translate(20px, 90px) rotate(1.041106rad);
+}
+
+.warp__1 {
+  transform: translate(30px, 110px) rotate(0.952006rad);
+}
+
+.warp__3 {
+  transform: translate(60px, 150px) rotate(0.705882rad);
+}
+
+.warp__4 {
+  transform: translate(80px, 168px) rotate(0.600926rad);
+}
+
+.warp__5 {
+  transform: translate(90px, 180px) rotate(0.49481rad);
+}
+
+.warp__6 {
+  transform: translate(110px, 190px) rotate(0.350878rad);
+}
+
+.warp__8 {
+  transform: translate(150px, 195px) rotate(0.094828rad);
+  color: #007acc;
+}
+
+.warp__9 {
+  transform: translate(170px, 195px) rotate(-0.01024rad);
+  color: #007acc;
+}
+
+.warp__11 {
+  transform: translate(215px, 190px) rotate(-0.1833rad);
+  color: #007acc;
+}
+
+.warp__12 {
+  transform: translate(240px, 185px) rotate(-0.242992rad);
+  color: #007acc;
+}
+
+.warp__13 {
+  transform: translate(261px, 180px) rotate(-0.294055rad);
+  color: #007acc;
+}
+
+.warp__14 {
+  transform: translate(285px, 170px) rotate(-0.345868rad);
+  color: #53a3d7;
+}
+
+.warp__15 {
+  transform: translate(305px, 160px) rotate(-0.358303rad);
+  color: #53a3d7;
+}
+
+.warp__16 {
+  transform: translate(325px, 150px) rotate(-0.327675rad);
+  color: #53a3d7;
+}
+
+.warp__18 {
+  transform: translate(370px, 135px) rotate(-0.256447rad);
+  color: #53a3d7;
+}
+
+.warp__19 {
+  transform: translate(392px, 130px) rotate(-0.212781rad);
+  color: #53a3d7;
+}
+
+.warp__20 {
+  transform: translate(415px, 125px) rotate(-0.174111rad);
+  color: #53a3d7;
+}
+
+.warp__21 {
+  transform: translate(430px, 120px) rotate(-0.14718rad);
+  color: #53a3d7;
+}
+
+.warp__22 {
+  font-size: 35px;
+  color: yellow;
+  transform: translate(465px, 110px) rotate(-0.02699rad);
+}
 
 
 /* Positionnement des boules de cristal en ligne */
 .boules-container {
   display: flex;
-  position: relative; /* positionnement personnalisé des images enfants */
+  position: relative;
+  /* positionnement personnalisé des images enfants */
 }
 
 .boules-container img {
@@ -173,9 +284,49 @@ export default {
   width: auto;
 }
 
-ul {
+.accordion {
+  background-color: #F89544 !important;
   margin-top: 18rem;
-  margin-left:2rem;
+  font-weight: bold;
+}
+
+.customAccordion {
+  margin-top: 18rem;
+  --bs-accordion-color: var(--bs-body-color);
+  --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+  --bs-accordion-border-color: var(--bs-border-color);
+  --bs-accordion-border-width: var(--bs-border-width);
+  --bs-accordion-border-radius: var(--bs-border-radius);
+  --bs-accordion-inner-border-radius: calc(var(--bs-border-radius) -(var(--bs-border-width)));
+  --bs-accordion-btn-padding-x: 1.25rem;
+  --bs-accordion-btn-padding-y: 1rem;
+  --bs-accordion-btn-color: var(--bs-body-color);
+  --bs-accordion-btn-bg: var(--bs-accordion-bg);
+  --bs-accordion-btn-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23212529' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e);
+  --bs-accordion-btn-icon-width: 1.25rem;
+  --bs-accordion-btn-icon-transform: rotate(-180deg);
+  --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+  --bs-accordion-btn-active-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23052c65' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e);
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.1rem #9f0c0c;
+  --bs-accordion-body-padding-x: 1.25rem;
+  --bs-accordion-body-padding-y: 1rem;
+  --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #F89544;
+  font-weight: bold;
+  font-family: 'Chelsea Market', cursive;
+}
+
+.accordion-item {
+  background-color: #F89544;
+  border: solid 1px #a43131;
+
+}
+
+ul {
+  margin-left: 2rem;
   padding: 0;
   list-style-type: none;
 }
@@ -205,36 +356,91 @@ p {
     letter-spacing: -10px;
   }
 
-  .cristalBall, .cristalBall2 {
+  .cristalBall,
+  .cristalBall2 {
     height: 4rem;
     margin-left: 0;
     margin-bottom: 0.25rem;
   }
 
   /* Ajustement des transformations pour écrans plus petits */
-  .warp__0 { transform: translate(15px, 75px) rotate(1.041106rad); }
-  .warp__1 { transform: translate(25px, 95px) rotate(0.952006rad); }
-  .warp__3 { transform: translate(40px, 135px) rotate(0.705882rad); }
-  .warp__4 { transform: translate(55px, 155px) rotate(0.600926rad); }
-  .warp__5 { transform: translate(70px, 165px) rotate(0.49481rad); }
-  .warp__6 { transform: translate(90px, 175px) rotate(0.350878rad); }
-  .warp__8 { transform: translate(120px, 180px) rotate(0.094828rad); }
-  .warp__9 { transform: translate(140px, 180px) rotate(-0.01024rad); }
-  .warp__11 { transform: translate(180px, 175px) rotate(-0.1833rad); }
-  .warp__12 { transform: translate(200px, 170px) rotate(-0.242992rad); }
-  .warp__13 { transform: translate(220px, 160px) rotate(-0.294055rad); }
-  .warp__14 { transform: translate(250px, 155px) rotate(-0.345868rad); }
-  .warp__15 { transform: translate(270px, 145px) rotate(-0.358303rad); }
-  .warp__16 { transform: translate(290px, 135px) rotate(-0.327675rad); }
-  .warp__18 { transform: translate(330px, 120px) rotate(-0.256447rad); }
-  .warp__19 { transform: translate(350px, 115px) rotate(-0.212781rad); }
-  .warp__20 { transform: translate(370px, 110px) rotate(-0.174111rad); }
-  .warp__21 { transform: translate(390px, 110px) rotate(-0.14718rad); }
-  .warp__22 { font-size: 25px; transform: translate(420px, 95px) rotate(-0.02699rad); }
-
-  ul {
-    margin-top: 5rem;
+  .warp__0 {
+    transform: translate(15px, 75px) rotate(1.041106rad);
   }
+
+  .warp__1 {
+    transform: translate(25px, 95px) rotate(0.952006rad);
+  }
+
+  .warp__3 {
+    transform: translate(40px, 135px) rotate(0.705882rad);
+  }
+
+  .warp__4 {
+    transform: translate(55px, 155px) rotate(0.600926rad);
+  }
+
+  .warp__5 {
+    transform: translate(70px, 165px) rotate(0.49481rad);
+  }
+
+  .warp__6 {
+    transform: translate(90px, 175px) rotate(0.350878rad);
+  }
+
+  .warp__8 {
+    transform: translate(120px, 180px) rotate(0.094828rad);
+  }
+
+  .warp__9 {
+    transform: translate(140px, 180px) rotate(-0.01024rad);
+  }
+
+  .warp__11 {
+    transform: translate(180px, 175px) rotate(-0.1833rad);
+  }
+
+  .warp__12 {
+    transform: translate(200px, 170px) rotate(-0.242992rad);
+  }
+
+  .warp__13 {
+    transform: translate(220px, 160px) rotate(-0.294055rad);
+  }
+
+  .warp__14 {
+    transform: translate(250px, 155px) rotate(-0.345868rad);
+  }
+
+  .warp__15 {
+    transform: translate(270px, 145px) rotate(-0.358303rad);
+  }
+
+  .warp__16 {
+    transform: translate(290px, 135px) rotate(-0.327675rad);
+  }
+
+  .warp__18 {
+    transform: translate(330px, 120px) rotate(-0.256447rad);
+  }
+
+  .warp__19 {
+    transform: translate(350px, 115px) rotate(-0.212781rad);
+  }
+
+  .warp__20 {
+    transform: translate(370px, 110px) rotate(-0.174111rad);
+  }
+
+  .warp__21 {
+    transform: translate(390px, 110px) rotate(-0.14718rad);
+  }
+
+  .warp__22 {
+    font-size: 25px;
+    transform: translate(420px, 95px) rotate(-0.02699rad);
+  }
+
 
   li {
     margin-bottom: 0.5rem;
@@ -247,7 +453,8 @@ p {
     letter-spacing: -12px;
   }
 
-  .cristalBall, .cristalBall2 {
+  .cristalBall,
+  .cristalBall2 {
     height: 3rem;
   }
 
