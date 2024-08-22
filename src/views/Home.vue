@@ -43,7 +43,7 @@
           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
             aria-expanded="true" aria-controls="collapseOne">Personnages</button>
         </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body">
             <ul>
               <li v-for="post in posts" :key="post.id">
@@ -289,15 +289,8 @@ export default {
   width: auto;
 }
 
-.accordion {
-  background-color: #F89544 !important;
-  margin-top: 18rem;
-  font-weight: bold;
-}
-
 .customAccordion {
-  margin-top: 18rem;
-  --bs-accordion-color: var(--bs-body-color);
+  margin-top: 20rem;
   --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
   --bs-accordion-border-color: var(--bs-border-color);
   --bs-accordion-border-width: var(--bs-border-width);
@@ -328,6 +321,8 @@ export default {
   background-color: #F89544;
   font-weight: bold;
   font-family: 'Chelsea Market', cursive;
+  color: white;
+
 }
 
 .accordion-item {

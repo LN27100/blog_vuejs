@@ -6,14 +6,16 @@
         <div v-if="post">
           <h1>{{ post.title }}</h1>
   
-          <!-- Affichage de l'image principale -->
-          <img v-if="post.images && post.images.length > 0" 
-               :src="post.images[0].url" 
-               :alt="post.title" 
-               class="picture"/>
+      
   
           <div class="describ" v-html="post.content"></div>
   
+           <!-- Affichage de l'image principale -->
+           <img v-if="post.images && post.images.length > 0" 
+               :src="post.images[0].url" 
+               :alt="post.title" 
+               class="picture"/>
+               
           <!-- Affichage des autres images -->
           <div v-if="post.images && post.images.length > 1" class="image-gallery">
             <div v-for="(image, index) in post.images.slice(1)" 

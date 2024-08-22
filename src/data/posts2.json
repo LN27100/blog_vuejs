@@ -1,8 +1,47 @@
 [
     {
+        "id": 6,
+        "title": "Super Saiyan",
+        "summary": "Transformation qui multiplie la puissance d'un Saiyan",
+        "content": "<p>Goten est le deuxième fils de Goku, connu pour sa ressemblance avec son père et son amitié avec Trunks.</p>",
+        "images": [
+      {
+        "url": "/img/superSaiyanGoku.jpeg"
+      },
+      {
+        "url": "/img/superSaiyanVegeta.jpg",
+        "title": "Vegeta"
+      },
+      {
+        "url": "/img/superSaiyanGohan.jpg",
+        "title": "Gohan"
+      },
+      {
+        "url": "/img/gokussj3.jpeg",
+        "title": "Sangoku Super Saiyan 3"
+      },
+      {
+        "url": "/img/gokugod.jpeg",
+        "title": "Sangoku God"
+      },
+      {
+        "url": "/img/gokusupersaiyanblue.png",
+        "title": "Sangoku Super Saiyan Blue"
+      },
+      {
+        "url": "/img/goku-ultrainstinct.jpg",
+        "title": "Sangoku Ultra Instinct"
+      },
+      {
+        "url": "/img/gokussj4.png",
+        "title": "Sangoku Super Saiyan 4"
+      }
+    ]
+    },
+    {
         "id": 1,
         "title": "Kamehameha",
-        "summary": "Personnage principal de Dragon Ball Z.",
+        "summary": "Vague déferlante d'énergie concentrée.",
         "content": "<p>Son Goku, connu au Japon sous le nom de Son Gokū (孫悟空), est l'un des personnages les plus emblématiques de l'univers des anime et manga, créé par Akira Toriyama.</p><p>Il est le personnage principal de la série Dragon Ball, et son évolution est marquée par un développement profond, tant sur le plan physique que moral. Voici une description complète de Son Goku, de ses débuts dans Dragon Ball jusqu'à ses apparitions dans les derniers épisodes de Dragon Ball Super.</p><h3>1. Les Débuts : Dragon Ball</h3><p>Son Goku fait ses débuts dans Dragon Ball en tant que jeune garçon naïf, mais extrêmement puissant, vivant seul dans les montagnes. Élevé par son grand-père adoptif Son Gohan, Goku est présenté comme un enfant innocent et de petite taille avec une queue de singe, ce qui intrigue immédiatement les spectateurs. Sa queue est un vestige de ses origines Saiyanes, une race de guerriers extraterrestres, mais cela n'est révélé que plus tard dans la série.</p><ul><li>Personnalité et Capacités Initiales :</li> <p>Goku est doté d'une force surhumaine, d'une grande agilité et d'un appétit insatiable. Cependant, il est totalement ignorant du monde extérieur jusqu'à sa rencontre avec Bulma, une adolescente qui le convainc de l'accompagner dans la quête des Dragon Balls. Au cours de cette quête, Goku développe ses compétences en arts martiaux, apprend à utiliser le Kamehameha (une technique énergétique emblématique) et se fait de nombreux amis, dont Krilin, Yamcha, et le maître des arts martiaux Tortue Géniale.</p><li>Les Tournois et les Entraînements : </li><p>Goku participe à plusieurs Tournois Mondiaux d'Arts Martiaux, où il affronte des adversaires redoutables comme Ten Shin Han et Piccolo, un démon déterminé à conquérir le monde. Grâce à des entraînements intensifs, notamment avec Maître Kaio après sa première mort lors de la saga Saiyan, Goku devient de plus en plus puissant, perfectionnant ses techniques de combat.</p></ul><h3>2. Dragon Ball Z : L'Éveil du Guerrier Saiyan</h3><p>Dans Dragon Ball Z, l'origine extraterrestre de Goku est révélée. Il est un Saiyan, envoyé sur Terre pour la conquérir, mais un accident lors de son enfance l'a privé de cette mission destructrice. Au lieu de cela, il est devenu le protecteur de la Terre.</p><ul><li>Les Sagas Saiyan et Namek :</li> <p>Goku découvre ses origines lorsque son frère Raditz arrive sur Terre, suivi par les Saiyans Nappa et Vegeta. Il subit une transformation profonde en tant que guerrier, atteignant des niveaux de puissance qui surpassent l'imagination, notamment en devenant Super Saiyan pour la première fois lors de son combat contre Freezer sur la planète Namek. Cette transformation, déclenchée par la mort de son ami Krilin, marque un tournant dans l'histoire des Saiyans, montrant que Goku est le légendaire guerrier de la prophétie.</p><li>Les Sagas des Cyborgs et de Cell :</li> <p>Après son retour sur Terre, Goku continue d'affronter des adversaires toujours plus puissants, tels que les Cyborgs et Cell. Il entraîne son fils, Gohan, pour devenir son successeur, estimant que ce dernier a un potentiel supérieur. Goku se sacrifie pour la Terre lors du combat contre Cell, mais continue à veiller sur ses proches depuis l'au-delà.</p><li>La Saga de Majin Buu :</li> <p>Goku revient sur Terre pour une journée pour participer au tournoi des arts martiaux. Il révèle alors la transformation en Super Saiyan 3, une forme d'une puissance extrême, mais qui consomme beaucoup d'énergie. Lors du combat contre Majin Buu, Goku devient le héros ultime, utilisant l'énergie de tous les habitants de la Terre pour former un Genkidama (ou Spirit Bomb) qui détruit Majin Buu.</p></ul>",
         "images": [
             {
@@ -13,7 +52,7 @@
     {
         "id": 2,
         "title": "Genki Dama",
-        "summary": "Prince de la planète Végéta et rival de Goku.",
+        "summary": "Absorbe l'énergie des êtres vivants pour créer une gigantesque sphère d'énergie.",
         "content": "<p>Végéta est le prince de la planète Végéta, un Saiyan puissant et rival de Goku.</p>",
         "images": [
             {
@@ -24,7 +63,7 @@
     {
         "id": 5,
         "title": "Kaioken",
-        "summary": "Premier fils de Goku possédant un immense potentiel.",
+        "summary": "Technique qui augmente temporairement la force, la vitesse et l'endurance.",
         "content": "<p>Gohan est le premier fils de Goku et Chichi, connu pour son immense potentiel de puissance.</p>",
         "images": [
             {
@@ -33,20 +72,9 @@
         ]
     },
     {
-        "id": 6,
-        "title": "Super Saiyan",
-        "summary": "Deuxième fils de Goku, ami de Trunks.",
-        "content": "<p>Goten est le deuxième fils de Goku, connu pour sa ressemblance avec son père et son amitié avec Trunks.</p>",
-        "images": [
-            {
-                "url": "/img/goten.png"
-            }
-        ]
-    },
-    {
         "id": 4,
         "title": "Final Flash",
-        "summary": "Femme de Goku, mère de Gohan et Goten.",
+        "summary": "Enorme décharge d'énergie concentrée",
         "content": "<p>Chichi est la femme de Goku et la mère de Gohan et Goten. Elle est connue pour son caractère fort et protecteur.</p>",
         "images": [
             {
@@ -57,8 +85,7 @@
     {
         "id": 3,
         "title": "Big Bang Attack",
-        "summary": "Maître des arts martiaux et premier mentor de Goku.",
-        "content": "<p>Tortue Géniale, également connu sous le nom de Kame Sennin, est un maître des arts martiaux et le premier mentor de Goku.</p>",
+        "summary": "Boule d'énergie concentrée, très destructrice.</p>",
         "images": [
             {
                 "url": "/img/tortueGeniale.jpg"
@@ -68,7 +95,7 @@
     {
         "id": 7,
         "title": "Makankosappo",
-        "summary": "Fille de Mr. Satan et femme de Gohan.",
+        "summary": "Rayon en spirale capable de percer presque tout.",
         "content": "<p>Videl est la fille de Mr. Satan et la femme de Gohan, ainsi que la mère de Pan.</p>",
         "images": [
             {
@@ -79,7 +106,7 @@
     {
         "id": 8,
         "title": "Regeneration",
-        "summary": "Fille de Gohan, petite-fille de Goku.",
+        "summary": "Capacité à régénérer des parties de son corps blessées ou détruites.",
         "content": "<p>Pan est la fille de Gohan et Videl, et la petite-fille de Goku. Elle est également une guerrière talentueuse.</p>",
         "images": [
             {
@@ -90,7 +117,7 @@
     {
         "id": 9,
         "title": "Fusion",
-        "summary": "Scientifique brillante et femme de Vegeta.",
+        "summary": "Piccolo a fusionné avec Nail et Kami pour devenir plus puissant.",
         "content": "<p>Bulma est une scientifique brillante, amie de Goku et la femme de Vegeta. Elle est l'une des premières alliées de Goku dans sa quête des Dragon Balls.</p>",
         "images": [
             {
@@ -101,7 +128,7 @@
     {
         "id": 10,
         "title": "Masenko",
-        "summary": "Fils de Vegeta et Bulma, ami de Goten.",
+        "summary": "Vague d'énergie tirée avec une ou deux mains.",
         "content": "<p>Trunks est le fils de Vegeta et Bulma. Il est un combattant puissant et ami proche de Goten.</p>",
         "images": [
             {
@@ -112,7 +139,7 @@
     {
         "id": 11,
         "title": "Burning Attack",
-        "summary": "Ami proche de Goku et mari de C18.",
+        "summary": "Attaque d'énergie rapide que Trunks utilise souvent",
         "content": "<p>Krillin est un ami proche de Goku et un combattant compétent. Il est marié à C18 et père de Marron.</p>",
         "images": [
             {
@@ -123,7 +150,7 @@
     {
         "id": 12,
         "title": "Final Hope Slash",
-        "summary": "Cyborg et femme de Krillin.",
+        "summary": "Trunks utilise son épée pour créer une gigantesque explosion",
         "content": "<p>C18, autrefois connue sous le nom de Lazuli, est un cyborg et la femme de Krillin. Elle est également une combattante redoutable.</p>",
         "images": [
             {
@@ -134,8 +161,7 @@
     {
         "id": 13,
         "title": "Destructo Disc",
-        "summary": "Fille de Krillin et C18, non intéressée par le combat.",
-        "content": "<p>Marron est la fille de Krillin et C18. Contrairement à ses parents, elle ne montre pas d'intérêt particulier pour le combat.</p>",
+        "summary": "Disque tranchant capable de couper presque tout.</p>",
         "images": [
             {
                 "url": "/img/marron.jpg"
@@ -145,7 +171,7 @@
     {
         "id": 14,
         "title": "Solar Flare",
-        "summary": "Ancien bandit du désert, ami de Goku.",
+        "summary": "Technique qui aveugle temporairement l'ennemi.",
         "content": "<p>Yamcha est un ancien bandit du désert et ami de Goku. Bien qu'il soit moins puissant que les autres guerriers Z, il reste un combattant compétent.</p>",
         "images": [
             {
@@ -156,7 +182,7 @@
     {
         "id": 15,
         "title": "Tri-Beam",
-        "summary": "Ancien bandit du désert, ami de Goku.",
+        "summary": "Attaque très puissante qui épuise l'énergie vitale de Tien.",
         "content": "<p>Yamcha est un ancien bandit du désert et ami de Goku. Bien qu'il soit moins puissant que les autres guerriers Z, il reste un combattant compétent.</p>",
         "images": [
             {
@@ -167,7 +193,7 @@
     {
         "id": 16,
         "title": "Multi-Form",
-        "summary": "Ancien bandit du désert, ami de Goku.",
+        "summary": "Technique pour créer plusieurs clones de lui-même.",
         "content": "<p>Yamcha est un ancien bandit du désert et ami de Goku. Bien qu'il soit moins puissant que les autres guerriers Z, il reste un combattant compétent.</p>",
         "images": [
             {
@@ -178,7 +204,7 @@
     {
         "id": 17,
         "title": "Absorption",
-        "summary": "Ancien bandit du désert, ami de Goku.",
+        "summary": "Cell peut absorber ses ennemis pour devenir plus puissant.",
         "content": "<p>Yamcha est un ancien bandit du désert et ami de Goku. Bien qu'il soit moins puissant que les autres guerriers Z, il reste un combattant compétent.</p>",
         "images": [
             {
@@ -189,7 +215,7 @@
     {
         "id": 18,
         "title": "Regeneration",
-        "summary": "Ancien bandit du désert, ami de Goku.",
+        "summary": "Cell peut se régénérer tant que son noyau est intact.",
         "content": "<p>Yamcha est un ancien bandit du désert et ami de Goku. Bien qu'il soit moins puissant que les autres guerriers Z, il reste un combattant compétent.</p>",
         "images": [
             {
@@ -200,7 +226,7 @@
     {
         "id": 19,
         "title": "Death Beam",
-        "summary": "Ancien bandit du désert, ami de Goku.",
+        "summary": "Rayon d'énergie très précis, souvent utilisé pour tuer d'un coup.",
         "content": "<p>Yamcha est un ancien bandit du désert et ami de Goku. Bien qu'il soit moins puissant que les autres guerriers Z, il reste un combattant compétent.</p>",
         "images": [
             {
@@ -211,7 +237,7 @@
     {
         "id": 20,
         "title": "Death Ball",
-        "summary": "Ancien bandit du désert, ami de Goku.",
+        "summary": "Shère d'énergie qu'il utilise pour détruire des planètes.",
         "content": "<p>Yamcha est un ancien bandit du désert et ami de Goku. Bien qu'il soit moins puissant que les autres guerriers Z, il reste un combattant compétent.</p>",
         "images": [
             {
@@ -222,7 +248,7 @@
     {
         "id": 21,
         "title": "Candy Beam",
-        "summary": "Ancien bandit du désert, ami de Goku.",
+        "summary": "Transforme les ennemis en bonbons ou autres objets comestibles.",
         "content": "<p>Yamcha est un ancien bandit du désert et ami de Goku. Bien qu'il soit moins puissant que les autres guerriers Z, il reste un combattant compétent.</p>",
         "images": [
             {
@@ -233,7 +259,7 @@
     {
         "id": 22,
         "title": "Transformation",
-        "summary": "Ancien bandit du désert, ami de Goku.",
+        "summary": "Freezer peut se transformer pour augmenter sa puissance.",
         "content": "<p>Yamcha est un ancien bandit du désert et ami de Goku. Bien qu'il soit moins puissant que les autres guerriers Z, il reste un combattant compétent.</p>",
         "images": [
             {
