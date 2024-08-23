@@ -35,6 +35,7 @@
       <img src="/img/boule7.png" alt="dragon ball 7 étoiles" class="cristalBall7">
       <img src="/img/boule6.png" alt="dragon ball 6 étoiles" class="cristalBall6">
     </div>
+  </div>
 
     <div class="customAccordion">
       <!-- Accordéon pour les sections -->
@@ -56,25 +57,526 @@
           </div>
         </div>
       </div>
+
       <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-            aria-expanded="false" aria-controls="collapseTwo">
-            Techniques de combat et pouvoirs</button>
-        </h2>
+    <h2 class="accordion-header">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseTwo"
+        aria-expanded="false"
+        aria-controls="collapseTwo"
+      >
+        Techniques de combat et pouvoirs
+      </button>
+    </h2>
+    <div
+      data-bs-parent="#accordionExample"
+    >
+
         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            <ul>
-              <li v-for="post in posts2" :key="post.id">
-                <router-link :to="{ name: 'Post2', params: { id: post.id } }">
-                  {{ post.title }}
-                </router-link>
-                <p>{{ post.summary }}</p>
-              </li>
-            </ul>
+            <div class="customAccordion2" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item2">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    Sangoku
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <ul>
+                      <li v-if="posts2.length > 0" v-for="post in getFilteredPosts([1, 2, 5, 28, 29])" :key="post.id">
+                        <router-link :to="{ name: 'Post2', params: { id: post.id } }">
+                          {{ post.title }}
+                        </router-link>
+                        <p>{{ post.summary }}</p>
+                      </li>
+                      <li v-else>Chargement des articles...</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item2">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo">
+                    Vegeta
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <ul>
+                      <li v-if="posts2.length > 0" v-for="post in getFilteredPosts([3, 4, 30])" :key="post.id">
+                        <router-link :to="{ name: 'Post2', params: { id: post.id } }">
+                          {{ post.title }}
+                        </router-link>
+                        <p>{{ post.summary }}</p>
+                      </li>
+                      <li v-else>Chargement des articles...</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item2">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
+                    Piccolo
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <ul>
+                      <li v-if="posts2.length > 0" v-for="post in getFilteredPosts([7, 8, 9, 32])" :key="post.id">
+                        <router-link :to="{ name: 'Post2', params: { id: post.id } }">
+                          {{ post.title }}
+                        </router-link>
+                        <p>{{ post.summary }}</p>
+                      </li>
+                      <li v-else>Chargement des articles...</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item2">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseFour">
+                    Sangohan
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <ul>
+                      <li v-if="posts2.length > 0" v-for="post in getFilteredPosts([23, 10, 33, 34, 35])" :key="post.id">
+                        <router-link :to="{ name: 'Post2', params: { id: post.id } }">
+                          {{ post.title }}
+                        </router-link>
+                        <p>{{ post.summary }}</p>
+                      </li>
+                      <li v-else>Chargement des articles...</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item2">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseFive">
+                    Trunks
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <ul>
+                      <li v-if="posts2.length > 0" v-for="post in getFilteredPosts([11, 12, 36, 37])" :key="post.id">
+                        <router-link :to="{ name: 'Post2', params: { id: post.id } }">
+                          {{ post.title }}
+                        </router-link>
+                        <p>{{ post.summary }}</p>
+                      </li>
+                      <li v-else>Chargement des articles...</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item2">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseSix">
+                    Goten
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <ul>
+                      <li v-if="posts2.length > 0" v-for="post in getFilteredPosts([24])" :key="post.id">
+                        <router-link :to="{ name: 'Post2', params: { id: post.id } }">
+                          {{ post.title }}
+                        </router-link>
+                        <p>{{ post.summary }}</p>
+                      </li>
+                      <li v-else>Chargement des articles...</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item2">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseSeven">
+                    Krillin
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <ul>
+                      <li v-if="posts2.length > 0" v-for="post in getFilteredPosts([13, 14, 25, 43])" :key="post.id">
+                        <router-link :to="{ name: 'Post2', params: { id: post.id } }">
+                          {{ post.title }}
+                        </router-link>
+                        <p>{{ post.summary }}</p>
+                      </li>
+                      <li v-else>Chargement des articles...</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item2">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseEight">
+                    Tien Shinhan
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <ul>
+                      <li v-if="posts2.length > 0" v-for="post in getFilteredPosts([15, 44, 45])" :key="post.id">
+                        <router-link :to="{ name: 'Post2', params: { id: post.id } }">
+                          {{ post.title }}
+                        </router-link>
+                        <p>{{ post.summary }}</p>
+                      </li>
+                      <li v-else>Chargement des articles...</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item2">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseNine">
+                    Yamcha </button>
+                </h2>
+                <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <ul>
+                      <li v-if="posts2.length > 0" v-for="post in getFilteredPosts([26, 27])" :key="post.id">
+                        <router-link :to="{ name: 'Post2', params: { id: post.id } }">
+                          {{ post.title }}
+                        </router-link>
+                        <p>{{ post.summary }}</p>
+                      </li>
+                      <li v-else>Chargement des articles...</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item2">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseTen">
+                    C18 </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <ul>
+                      <li v-if="posts2.length > 0" v-for="post in getFilteredPosts([48, 49])" :key="post.id">
+                        <router-link :to="{ name: 'Post2', params: { id: post.id } }">
+                          {{ post.title }}
+                        </router-link>
+                        <p>{{ post.summary }}</p>
+                      </li>
+                      <li v-else>Chargement des articles...</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item2">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseEleven" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseEleven">
+                    Chiaotzu </button>
+                </h2>
+                <div id="panelsStayOpen-collapseEleven" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <ul>
+                      <li v-if="posts2.length > 0" v-for="post in getFilteredPosts([46, 47])" :key="post.id">
+                        <router-link :to="{ name: 'Post2', params: { id: post.id } }">
+                          {{ post.title }}
+                        </router-link>
+                        <p>{{ post.summary }}</p>
+                      </li>
+                      <li v-else>Chargement des articles...</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item2">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwelve" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseTwelve">
+                    Gotenks </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwelve" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <ul>
+                      <li v-if="posts2.length > 0" v-for="post in getFilteredPosts([54, 55, 56])" :key="post.id">
+                        <router-link :to="{ name: 'Post2', params: { id: post.id } }">
+                          {{ post.title }}
+                        </router-link>
+                        <p>{{ post.summary }}</p>
+                      </li>
+                      <li v-else>Chargement des articles...</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item2">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapsethirteen" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapsethirteen">
+                    C16 </button>
+                </h2>
+                <div id="panelsStayOpen-collapsethirteen" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <ul>
+                      <li v-if="posts2.length > 0" v-for="post in getFilteredPosts([60, 61])" :key="post.id">
+                        <router-link :to="{ name: 'Post2', params: { id: post.id } }">
+                          {{ post.title }}
+                        </router-link>
+                        <p>{{ post.summary }}</p>
+                      </li>
+                      <li v-else>Chargement des articles...</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item2">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseFourteen" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseFourteen">
+                    C17 </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFourteen" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <ul>
+                      <li v-if="posts2.length > 0" v-for="post in getFilteredPosts([50, 51])" :key="post.id">
+                        <router-link :to="{ name: 'Post2', params: { id: post.id } }">
+                          {{ post.title }}
+                        </router-link>
+                        <p>{{ post.summary }}</p>
+                      </li>
+                      <li v-else>Chargement des articles...</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item2">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseFifteen" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseFifteen">
+                    Cell </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFifteen" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <ul>
+                      <li v-if="posts2.length > 0" v-for="post in getFilteredPosts([17, 18])" :key="post.id">
+                        <router-link :to="{ name: 'Post2', params: { id: post.id } }">
+                          {{ post.title }}
+                        </router-link>
+                        <p>{{ post.summary }}</p>
+                      </li>
+                      <li v-else>Chargement des articles...</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item2">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseSixteen" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseSixteen">
+                    Freezer </button>
+                </h2>
+                <div id="panelsStayOpen-collapseSixteen" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <ul>
+                      <li v-if="posts2.length > 0" v-for="post in getFilteredPosts([19, 20, 22, 39, 40])" :key="post.id">
+                        <router-link :to="{ name: 'Post2', params: { id: post.id } }">
+                          {{ post.title }}
+                        </router-link>
+                        <p>{{ post.summary }}</p>
+                      </li>
+                      <li v-else>Chargement des articles...</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item2">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseSeventeen" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseSeventeen">
+                    Buu </button>
+                </h2>
+                <div id="panelsStayOpen-collapseSeventeen" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <ul>
+                      <li v-if="posts2.length > 0" v-for="post in getFilteredPosts([21,41, 42, 68, 69])" :key="post.id">
+                        <router-link :to="{ name: 'Post2', params: { id: post.id } }">
+                          {{ post.title }}
+                        </router-link>
+                        <p>{{ post.summary }}</p>
+                      </li>
+                      <li v-else>Chargement des articles...</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item2">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseEigthteen" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseEigthteen">
+                    Dabura </button>
+                </h2>
+                <div id="panelsStayOpen-collapseEigthteen" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <ul>
+                      <li v-if="posts2.length > 0" v-for="post in getFilteredPosts([52, 53])" :key="post.id">
+                        <router-link :to="{ name: 'Post2', params: { id: post.id } }">
+                          {{ post.title }}
+                        </router-link>
+                        <p>{{ post.summary }}</p>
+                      </li>
+                      <li v-else>Chargement des articles...</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item2">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseNineteen" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseNineteen">
+                    Majin Vegeta </button>
+                </h2>
+                <div id="panelsStayOpen-collapseNineteen" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <ul>
+                      <li v-if="posts2.length > 0" v-for="post in getFilteredPosts([57, 58])" :key="post.id">
+                        <router-link :to="{ name: 'Post2', params: { id: post.id } }">
+                          {{ post.title }}
+                        </router-link>
+                        <p>{{ post.summary }}</p>
+                      </li>
+                      <li v-else>Chargement des articles...</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item2">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwenty" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseTwenty">
+                    Dr Gero </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwenty" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <ul>
+                      <li v-if="posts2.length > 0" v-for="post in getFilteredPosts([59])" :key="post.id">
+                        <router-link :to="{ name: 'Post2', params: { id: post.id } }">
+                          {{ post.title }}
+                        </router-link>
+                        <p>{{ post.summary }}</p>
+                      </li>
+                      <li v-else>Chargement des articles...</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item2">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwentyOne" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseTwentyOne">
+                    Whish </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwentyOne" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <ul>
+                      <li v-if="posts2.length > 0" v-for="post in getFilteredPosts([62, 63])" :key="post.id">
+                        <router-link :to="{ name: 'Post2', params: { id: post.id } }">
+                          {{ post.title }}
+                        </router-link>
+                        <p>{{ post.summary }}</p>
+                      </li>
+                      <li v-else>Chargement des articles...</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item2">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwentyTwo" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseTwentyTwo">
+                    Beerus </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwentyTwo" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <ul>
+                      <li v-if="posts2.length > 0" v-for="post in getFilteredPosts([64, 65])" :key="post.id">
+                        <router-link :to="{ name: 'Post2', params: { id: post.id } }">
+                          {{ post.title }}
+                        </router-link>
+                        <p>{{ post.summary }}</p>
+                      </li>
+                      <li v-else>Chargement des articles...</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item2">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTweentyThree" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseTweentyThree">
+                    Jiren </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTweentyThree" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <ul>
+                      <li v-if="posts2.length > 0" v-for="post in getFilteredPosts([66, 67])" :key="post.id">
+                        <router-link :to="{ name: 'Post2', params: { id: post.id } }">
+                          {{ post.title }}
+                        </router-link>
+                        <p>{{ post.summary }}</p>
+                      </li>
+                      <li v-else>Chargement des articles...</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
+    </div>
+
+
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -89,26 +591,56 @@
         </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
-import posts2 from '@/data/posts2.json';
+import { ref, onMounted } from 'vue';
 
 export default {
-  props: {
-    posts: {
-      type: Array,
-      required: true
-    }
-  },
-  data() {
-    return {
-      localPosts: this.posts.slice(), // Une copie pour une utilisation interne
-      posts2: posts2 // Charger les données de posts2.json
+  setup() {
+    const posts = ref([]);
+    const posts2 = ref([]);
+
+    const fetchPosts = async () => {
+      try {
+        const response = await fetch('/data/posts.json'); // Chemin relatif depuis le dossier public
+        if (!response.ok) {
+          throw new Error('Failed to load posts.json');
+        }
+        posts.value = await response.json();
+      } catch (error) {
+        console.error('Error fetching posts.json:', error);
+      }
     };
-  }
-}
+
+    const fetchPosts2 = async () => {
+      try {
+        const response = await fetch('/data/posts2.json'); 
+        if (!response.ok) {
+          throw new Error('Failed to load posts2.json');
+        }
+        posts2.value = await response.json();
+      } catch (error) {
+        console.error('Error fetching posts2.json:', error);
+      }
+    };
+
+    const getFilteredPosts = (filterIds) => {
+      return posts2.value.filter(post => filterIds.includes(post.id));
+    };
+
+    onMounted(() => {
+      fetchPosts();
+      fetchPosts2();
+    });
+
+    return {
+      posts,
+      posts2,
+      getFilteredPosts,
+    };
+  },
+};
 </script>
 
 
@@ -311,9 +843,30 @@ export default {
   --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
 }
 
+.customAccordion2 {
+  --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+  --bs-accordion-border-color: var(--bs-border-color);
+  --bs-accordion-border-width: var(--bs-border-width);
+  --bs-accordion-border-radius: var(--bs-border-radius);
+  --bs-accordion-inner-border-radius: calc(var(--bs-border-radius) -(var(--bs-border-width)));
+  --bs-accordion-btn-padding-x: 1.25rem;
+  --bs-accordion-btn-padding-y: 1rem;
+  --bs-accordion-btn-color: var(--bs-body-color);
+  --bs-accordion-btn-bg: var(--bs-accordion-bg);
+  --bs-accordion-btn-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23212529' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e);
+  --bs-accordion-btn-icon-width: 1.25rem;
+  --bs-accordion-btn-icon-transform: rotate(-180deg);
+  --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+  --bs-accordion-btn-active-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23052c65' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e);
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.1rem #9f0c0c;
+  --bs-accordion-body-padding-x: 1.25rem;
+  --bs-accordion-body-padding-y: 1rem;
+  --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
+}
+
 /* cibler l'élément accordion-button en mode focus pour ajouter un bord arrondi*/
 .customAccordion .accordion-button:focus {
-  border-radius: 5px; 
+  border-radius: 5px;
   box-shadow: var(--bs-accordion-btn-focus-box-shadow);
 }
 
@@ -328,6 +881,13 @@ export default {
 .accordion-item {
   background-color: #F89544;
   border: solid 1px #a43131;
+  border-radius: 5px;
+
+}
+
+.accordion-item2 {
+  background-color: #F89544;
+  border: solid 1px #16537e;
   border-radius: 5px;
 
 }
