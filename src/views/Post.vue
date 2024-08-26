@@ -1,59 +1,60 @@
 <template>
-  <button @click="goHome" class="back-button">Accueil</button>
-
   <div>
-    <div v-if="post">
-      <h1>{{ post.title }}</h1>
-      
-      <!-- Affichage de l'image principale -->
-      <img v-if="post.images && post.images.length > 0" 
-           :src="post.images[0].url" 
-           :alt="post.images[0].title" 
-           class="picture"/>
-      
-      <div class="describ" v-html="post.content"></div>
-      
-      <!-- Affichage des autres images -->
-      <div v-if="post.images && post.images.length > 1" class="image-gallery">
-        <div v-for="(image, index) in post.images.slice(1)" 
-             :key="index" 
-             class="image-container">
-          <img :src="image.url" :alt="image.title" class="picture"/>
-          <p class="image-title">{{ image.title }}</p>
+    <button @click="goHome" class="back-button">Accueil</button>
+
+    <div>
+      <div v-if="post">
+        <h1>{{ post.title }}</h1>
+
+        <!-- Affichage de l'image principale -->
+        <img v-if="post.images && post.images.length > 0" 
+             :src="post.images[0].url" 
+             :alt="post.images[0].title" 
+             class="picture"/>
+        
+        <div class="describ" v-html="post.content"></div>
+        
+        <!-- Affichage des autres images -->
+        <div v-if="post.images && post.images.length > 1" class="image-gallery">
+          <div v-for="(image, index) in post.images.slice(1)" 
+               :key="index" 
+               class="image-container">
+            <img :src="image.url" :alt="image.title" class="picture"/>
+            <p class="image-title">{{ image.title }}</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div v-else>
-      <p>Article non trouvé</p>
+      <div v-else>
+        <p>Article non trouvé</p>
+      </div>
     </div>
   </div>
 </template>
 
-
 <script>
 export default {
-  props: {
-    posts: {
-      type: Array,
-      default: () => []
-    }
-  },
   data() {
     return {
       post: null
     };
   },
-  created() {
-    if (!Array.isArray(this.posts)) {
-      console.error('Les données des posts sont manquantes ou mal formatées.', this.posts);
-      return;
-    }
-    
+  async created() {
     const postId = Number(this.$route.params.id);
-    this.post = this.posts.find(post => post.id === postId);
 
-    if (!this.post) {
-      console.error('Aucun article trouvé avec l\'id:', postId);
+    try {
+      // Fetch les posts depuis le fichier JSON
+      const response = await fetch('/data/posts.json'); // Assurez-vous que le chemin est correct
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      const posts = await response.json();
+      this.post = posts.find(post => post.id === postId);
+      
+      if (!this.post) {
+        console.error('Aucun article trouvé avec l\'id:', postId);
+      }
+    } catch (error) {
+      console.error('Erreur lors du chargement des données:', error);
     }
   },
   methods: {
@@ -73,20 +74,20 @@ export default {
 .picture {
   width: 20rem; 
   height: 15rem;
-  object-fit: cover; /* Assure que l'image remplit le conteneur sans déformation */
+  object-fit: cover;
   display: block;
-  margin: 0.5rem auto; /* Centre les images horizontalement et ajoute un espace vertical */
+  margin: 0.5rem auto;
 }
 
 .image-gallery {
   display: flex;
-  flex-wrap: wrap; /* Permet de passer à la ligne pour les images qui ne rentrent pas */
-  gap: 1rem; /* Espace entre les images */
+  flex-wrap: wrap;
+  gap: 1rem;
   justify-content: center;
 }
 
 .image-container {
-  flex: 1 1 calc(50% - 1rem); /* Chaque conteneur prend 50% de la largeur moins l'espace */
+  flex: 1 1 calc(50% - 1rem);
   max-width: calc(50% - 1rem);
   box-sizing: border-box;
   text-align: center;
