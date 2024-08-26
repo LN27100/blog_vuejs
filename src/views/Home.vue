@@ -870,6 +870,13 @@ export default {
   box-shadow: var(--bs-accordion-btn-focus-box-shadow);
 }
 
+/* Style de l'accordéon  replié */
+.accordion-button.collapsed {
+  color: black;
+}
+
+/* Style de l'accordéon déroulé */
+
 .accordion-button:not(.collapsed) {
   background-color: #F89544;
   font-weight: bold;

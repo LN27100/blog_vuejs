@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <router-view :posts="posts" />
+    <router-view />
   </div>
 </template>
 
 <script>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, provide } from 'vue';
 import axios from 'axios';
 
 export default {
@@ -21,6 +21,9 @@ export default {
           console.error('Erreur lors de la récupération des articles:', error);
         });
     });
+
+    // Fournir les `posts` pour les composants enfants
+    provide('posts', posts);
 
     return { posts };
   }
