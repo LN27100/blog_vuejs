@@ -230,13 +230,13 @@ export default {
 
 <style scoped>
 .title-container {
-  margin-left: 15rem;
+  margin-left: 10rem;
 }
 
 .title {
   display: inline-block;
   letter-spacing: -15px;
-  font-size: 25px;
+  font-size: 40px;
   font-family: 'Chelsea Market', cursive;
   font-weight: bold;
   color: #005a99;
@@ -336,7 +336,7 @@ export default {
 }
 
 .warp__22 {
-  font-size: 35px;
+  font-size: 45px;
   color: yellow;
   transform: translate(465px, 110px) rotate(-0.02699rad);
 }
@@ -370,7 +370,7 @@ export default {
 }
 
 .cristalBall3 {
-  margin-top: 7rem;
+  margin-top: 10rem;
   margin-left: 10rem;
   height: 7rem;
   width: auto;
