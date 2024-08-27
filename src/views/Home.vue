@@ -37,15 +37,23 @@
     </div>
   </div>
 
-  <div class="customAccordion">
+   <!-- Accordion personnalisé pour afficher des sections repliables -->
+   <div class="customAccordion">
+    <!-- Premier item de l'accordéon pour afficher les personnages -->
     <div class="accordion-item">
       <h2 class="accordion-header">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-          aria-expanded="true" aria-controls="collapseOne">Personnages</button>
+        <!-- Bouton pour ouvrir/fermer la section 'Techniques de combat et pouvoirs' -->
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+          aria-expanded="false" aria-controls="collapseOne">
+       Personnages
+        </button>
       </h2>
+      <!-- Contenu de la section 'Personnages' -->
       <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
         <div class="accordion-body">
+          <!-- Liste des posts pour chaque personnage -->
           <ul>
+            <!-- Boucle sur les posts pour afficher chaque post avec un lien vers sa page dédiée -->
             <li v-for="post in posts" :key="post.id">
               <router-link :to="{ name: 'Post', params: { id: post.id } }">
                 {{ post.title }}
@@ -57,33 +65,43 @@
       </div>
     </div>
 
+    <!-- Deuxième item de l'accordéon pour afficher les techniques de combat et pouvoirs -->
     <div class="accordion-item">
       <h2 class="accordion-header">
+        <!-- Bouton pour ouvrir/fermer la section 'Techniques de combat et pouvoirs' -->
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
           aria-expanded="false" aria-controls="collapseTwo">
           Techniques de combat et pouvoirs
         </button>
       </h2>
+      <!-- Contenu de la section 'Techniques de combat et pouvoirs' -->
       <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
         <div class="accordion-body">
+          <!-- Accordéon interne pour afficher les détails de chaque personnage -->
           <div class="customAccordion2" id="accordionPanelsStayOpenExample">
+            <!-- Boucle sur les personnages pour créer un accordéon pour chaque personnage -->
             <div v-for="(character, index) in characters" :key="index" class="accordion-item2">
               <h2 class="accordion-header">
+                <!-- Bouton pour ouvrir/fermer la section de chaque personnage -->
                 <button class="accordion-button collapsed" type="button" :data-bs-toggle="'collapse'"
                   :data-bs-target="'#collapse-' + index" aria-expanded="false"
                   :aria-controls="'collapse-' + index">
                   {{ character.name }}
                 </button>
               </h2>
+              <!-- Contenu de la section de chaque personnage -->
               <div :id="'collapse-' + index" class="accordion-collapse collapse">
                 <div class="accordion-body">
+                  <!-- Liste des posts filtrés pour chaque personnage -->
                   <ul>
+                    <!-- Boucle sur les posts filtrés pour afficher chaque post -->
                     <li v-for="post in getFilteredPosts(character.ids)" :key="post.id">
                       <router-link :to="{ name: 'Post2', params: { id: post.id } }">
                         {{ post.title }}
                       </router-link>
                       <p>{{ post.summary }}</p>
                     </li>
+                    <!-- Message affiché s'il n'y a pas de posts pour un personnage donné -->
                     <li v-if="!getFilteredPosts(character.ids).length">Aucun article disponible</li>
                   </ul>
                 </div>
@@ -94,12 +112,15 @@
       </div>
     </div>
 
+    <!-- Troisième item de l'accordéon pour afficher les combats -->
     <div class="accordion-item">
       <h2 class="accordion-header">
+        <!-- Bouton pour ouvrir/fermer la section 'Combats' -->
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
           data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
           Combats</button>
       </h2>
+      <!-- Contenu de la section 'Combats' -->
       <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
         <div class="accordion-body">
           <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
@@ -434,7 +455,6 @@ export default {
 }
 
 /* Style de l'accordéon déroulé */
-
 .accordion-button:not(.collapsed) {
   background-color: #F89544;
   font-weight: bold;
