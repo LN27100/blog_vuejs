@@ -183,6 +183,7 @@ export default {
     // Déclaration d'une liste de personnages avec leurs IDs associés
     const characters = [
       { name: 'Sangoku', ids: [1, 2, 5, 28, 29] },
+      { name: 'Sangohan', ids: [23, 10, 33, 34, 35, 70] },
       { name: 'Vegeta', ids: [3, 4, 30] },
       { name: 'Dabura', ids: [52, 53] },
       { name: 'Majin Vegeta', ids: [57, 58] },
@@ -191,11 +192,10 @@ export default {
       { name: 'Beerus', ids: [64, 65] },
       { name: 'Jiren', ids: [66, 67] },
       { name: 'Piccolo', ids: [7, 8, 9, 32] },
-      { name: 'Sangohan', ids: [23, 10, 33, 34, 35] },
       { name: 'Trunks', ids: [11, 12, 36, 37] },
       { name: 'Goten', ids: [24] },
       { name: 'Krillin', ids: [13, 14, 25, 43] },
-      { name: 'Tien Shinhan', ids: [15, 44, 45] },
+      { name: 'Tien Shinhan', ids: [15,16, 44, 45] },
       { name: 'Yamcha', ids: [26, 27] },
       { name: 'C18', ids: [48, 49] },
       { name: 'Chiaotzu', ids: [46, 47] },
