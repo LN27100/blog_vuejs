@@ -6,35 +6,35 @@
         "content": "<p>La Saga des Saiyans commence avec l'arrivée de Raditz, le frère de Goku, qui révèle à ce dernier ses origines Saiyanes. Après un combat intense, Raditz est tué, mais pas avant d'avoir envoyé un message à Vegeta et Nappa, deux autres Saiyans, les informant de la présence de puissants guerriers sur Terre. Goku, Piccolo, et les autres Z Fighters s'entraînent durement pour affronter cette nouvelle menace. Les combats culminent avec la bataille contre Nappa et Vegeta, où Goku révèle pour la première fois le Kaioken, et les Saiyans montrent leur capacité de transformation en Grands Singes.</p>",
         "images": [
             {
-                "url": "/img/superSaiyanGoku.jpeg"
+                "url": "/img/sagaSaiyans.jpeg"
             },
             {
-                "url": "/img/superSaiyanVegeta.jpg",
-                "title": "Vegeta"
+                "url": "/img/sagaSaiyans1.jpeg"
             },
             {
-                "url": "/img/superSaiyanGohan.jpg",
-                "title": "Gohan"
+                "url": "/img/sagaSaiyans2.jpeg"
             },
             {
-                "url": "/img/gokussj3.jpeg",
-                "title": "Sangoku Super Saiyan 3"
+                "url": "/img/sagaSaiyans3.jpeg"
             },
             {
-                "url": "/img/gokugod.jpeg",
-                "title": "Sangoku God"
+                "url": "/img/sagaSaiyans4.jpeg"
             },
             {
-                "url": "/img/gokusupersaiyanblue.png",
-                "title": "Sangoku Super Saiyan Blue"
+                "url": "/img/sagaSaiyans5.jpg"
             },
             {
-                "url": "/img/goku-ultrainstinct.jpg",
-                "title": "Sangoku Ultra Instinct"
+                "url": "/img/sagaSaiyans6.jpeg"
             },
             {
-                "url": "/img/gokussj4.png",
-                "title": "Sangoku Super Saiyan 4"
+                "url": "/img/sagaSaiyans7.jpeg"
+            }
+            ,
+            {
+                "url": "/img/sagaSaiyans8.jpeg"
+            },
+            {
+                "url": "/img/sagaSaiyans9.jpg"
             }
         ]
     },
@@ -45,16 +45,33 @@
         "content": "<p>La Saga de Namek débute lorsque Goku et ses amis se rendent sur la planète Namek pour utiliser les Dragon Balls et ressusciter leurs amis morts. Ils y rencontrent Freezer, un tyran intergalactique qui veut également les Dragon Balls pour devenir immortel. Les Z Fighters, y compris Vegeta, s'allient pour affronter les forces de Freezer, menant à une série de batailles épiques. Le combat culmine avec la transformation de Goku en Super Saiyan après la mort de Krillin, et la bataille finale contre Freezer.</p>",
         "images": [
             {
-                "url": "/img/kamehamehaGokuFin.jpg"
+                "url": "/img/sagaNameks.jpeg"
             },
             {
-                "url": "/img/kamehamehaGokuDebut.jpg"
+                "url": "/img/sagaNameks1.jpeg"
             },
             {
-                "url": "/img/kamehamehaGoku2.png"
+                "url": "/img/sagaNameks2.jpeg"
             },
             {
-                "url": "/img/kamehamehaGokuEnvoi.png"
+                "url": "/img/sagaNameks3.jpeg"
+            }
+            ,
+            {
+                "url": "/img/sagaNameks4.jpeg"
+            },
+            {
+                "url": "/img/sagaNameks5.jpeg"
+            },
+            {
+                "url": "/img/sagaNameks6.jpeg"
+            }
+            ,
+            {
+                "url": "/img/sagaNameks7.jpeg"
+            },
+            {
+                "url": "/img/sagaNameks8.jpeg"
             }
         ]
     },
@@ -65,13 +82,30 @@
         "content": "<p>La Saga de Freezer continue les événements de Namek avec l'intensification du conflit contre Freezer. Ce dernier se transforme à plusieurs reprises, chaque forme augmentant sa puissance. Goku et ses alliés, y compris Vegeta, Piccolo, et Gohan, luttent pour survivre et protéger les habitants de Namek. L'apogée de cette saga est le combat légendaire entre Goku, qui atteint pour la première fois la forme de Super Saiyan, et Freezer, dans une bataille qui secoue toute la planète Namek.</p>",
         "images": [
             {
-                "url": "/img/genkidama1.jpeg"
+                "url": "/img/sagaFreezer1.jpeg"
             },
             {
-                "url": "/img/genkidama2.jpg"
+                "url": "/img/sagaFreezer2.jpeg"
             },
             {
-                "url": "/img/genkidama3.png"
+                "url": "/img/sagaFreezer3.jpeg"
+            }
+            ,
+            {
+                "url": "/img/sagaFreezer4.jpeg"
+            },
+            {
+                "url": "/img/sagaFreezer6.jpeg"
+            }
+            ,
+            {
+                "url": "/img/sagaFreezer7.jpeg"
+            },
+            {
+                "url": "/img/sagaFreezer8.jpeg"
+            },
+            {
+                "url": "/img/sagaFreezer9.jpeg"
             }
         ]
     },
@@ -82,25 +116,25 @@
         "content": "<p>La Saga des Androïds commence avec l'arrivée de Trunks du futur, qui avertit les Z Fighters de l'imminente attaque des Androïdes, des créatures artificielles créées par le Dr. Gero pour se venger de Goku et ses amis. Les combats contre les Androïdes 17 et 18 montrent leur puissance dévastatrice. La saga s'intensifie avec l'apparition de Cell, un bio-androïde qui absorbe les Androïdes pour atteindre sa forme parfaite. Les Z Fighters doivent trouver un moyen de l'arrêter avant qu'il ne détruise le monde entier.</p>",
         "images": [
             {
-                "url": "public/img/sagaAndroids.jpeg"
+                "url": "/img/sagaAndroids.jpeg"
             },
             {
-                "url": "public/img/sagaAndroids1.jpeg"
+                "url": "/img/sagaAndroids1.jpeg"
             },
             {
-                "url": "public/img/sagaAndroids2.jpeg"
+                "url": "/img/sagaAndroids2.jpeg"
             },
             {
-                "url": "public/img/sagaAndroids3.jpeg"
+                "url": "/img/sagaAndroids3.jpeg"
             },
             {
-                "url": "public/img/sagaAndroids4.jpeg"
+                "url": "/img/sagaAndroids4.jpeg"
             },
             {
-                "url": "public/img/sagaAndroids5.jpeg"
+                "url": "/img/sagaAndroids5.jpeg"
             },
             {
-                "url": "public/img/sagaAndroids6.jpeg"
+                "url": "/img/sagaAndroids6.jpeg"
             }
 
         ]
@@ -112,13 +146,41 @@
         "content": "<p>La Saga de Cell se concentre sur le tournoi des Cell Games, organisé par Cell après avoir atteint sa forme parfaite en absorbant les Androïdes 17 et 18. Cell défie les Z Fighters et annonce un tournoi pour décider du sort de la Terre. Goku, Gohan, et les autres Z Fighters participent, menant à des combats intenses. Le moment clé est lorsque Gohan atteint le Super Saiyan 2, surpassant son père et détruisant Cell avec une Kamehameha ultime. Cependant, Goku sacrifie sa vie pour sauver la Terre en envoyant Cell dans une autre dimension avant qu'il n'explose.</p>",
         "images": [
             {
-                "url": "/img/finalFlashVegeta1.jpg"
+                "url": "/img/sagaCell.jpeg"
             },
             {
-                "url": "/img/finalFlashVegeta2.png"
+                "url": "/img/sagaCell1.jpeg"
             },
             {
-                "url": "/img/finalFlashVegeta3.jpg"
+                "url": "/img/sagaCell2.jpeg"
+            },
+            {
+                "url": "/img/sagaCell3.jpeg"
+            },
+            {
+                "url": "/img/sagaCell4.jpeg"
+            },
+            {
+                "url": "/img/sagaCell5.jpeg"
+            },
+            {
+                "url": "/img/sagaCell6.jpeg"
+            },
+            {
+                "url": "/img/sagaCell7.jpeg"
+            },
+            {
+                "url": "/img/sagaCell8.jpeg"
+            }
+            ,
+            {
+                "url": "/img/sagaCell9.jpeg"
+            },
+            {
+                "url": "/img/sagaCell10.jpeg"
+            },
+            {
+                "url": "/img/sagaCell.gif"
             }
         ]
     },
@@ -129,40 +191,37 @@
         "content": "<p>La Saga de Majin Buu débute avec la libération de Majin Buu par Babidi, un sorcier maléfique qui souhaite dominer l'univers. Majin Buu, avec ses multiples transformations, devient une menace grandissante pour la Terre et ses habitants. Les Z Fighters, y compris Goku, Vegeta, et leurs enfants, combattent désespérément contre Buu. La saga culmine avec la fusion de Goku et Vegeta en Vegito, et plus tard la transformation de Goku en Super Saiyan 3 pour affronter Kid Buu, la forme originale et la plus puissante de Buu. Goku réussit finalement à détruire Buu avec une Genkidama, restaurant la paix dans l'univers.</p>",
         "images": [
             {
-                "url": "public/img/sagaBoo.jpeg"
+                "url": "/img/sagaBoo.jpeg"
             },
             {
-                "url": "/img/bigBangAttakVegeta2.jpg"
+                "url": "/img/sagaBoo1.jpeg"
             },
             {
-                "url": "/img/bigbangAttakVegeta3.jpg"
+                "url": "/img/sagaBoo2.jpeg"
             },
             {
-                "url": "/img/bigBangAttakVegeta1.jpg"
+                "url": "/img/sagaBoo3.jpeg"
             },
             {
-                "url": "/img/bigBangAttakVegeta2.jpg"
+                "url": "/img/sagaBoo4.jpeg"
             },
             {
-                "url": "/img/bigbangAttakVegeta3.jpg"
+                "url": "/img/sagaBoo5.jpeg"
             },
             {
-                "url": "/img/bigBangAttakVegeta1.jpg"
+                "url": "/img/sagaBoo6.jpeg"
             },
             {
-                "url": "/img/bigBangAttakVegeta2.jpg"
+                "url": "/img/sagaBoo7.jpeg"
             },
             {
-                "url": "/img/bigbangAttakVegeta3.jpg"
+                "url": "/img/sagaBoo8.jpeg"
             },
             {
-                "url": "/img/bigBangAttakVegeta1.jpg"
+                "url": "/img/sagaBoo9.jpeg"
             },
             {
-                "url": "/img/bigBangAttakVegeta2.jpg"
-            },
-            {
-                "url": "/img/bigbangAttakVegeta3.jpg"
+                "url": "/img/sagaBoo10.jpeg"
             }
         ]
     }
