@@ -82,17 +82,27 @@
         "content": "<p>La Saga des Androïds commence avec l'arrivée de Trunks du futur, qui avertit les Z Fighters de l'imminente attaque des Androïdes, des créatures artificielles créées par le Dr. Gero pour se venger de Goku et ses amis. Les combats contre les Androïdes 17 et 18 montrent leur puissance dévastatrice. La saga s'intensifie avec l'apparition de Cell, un bio-androïde qui absorbe les Androïdes pour atteindre sa forme parfaite. Les Z Fighters doivent trouver un moyen de l'arrêter avant qu'il ne détruise le monde entier.</p>",
         "images": [
             {
-                "url": "/img/kaiokenGoku1.png"
+                "url": "public/img/sagaAndroids.jpeg"
             },
             {
-                "url": "/img/kaiokenGoku3.jpg"
+                "url": "public/img/sagaAndroids1.jpeg"
             },
             {
-                "url": "/img/kaiokenGoku4.jpg"
+                "url": "public/img/sagaAndroids2.jpeg"
             },
             {
-                "url": "/img/kaiokenGoku5.jpg"
+                "url": "public/img/sagaAndroids3.jpeg"
+            },
+            {
+                "url": "public/img/sagaAndroids4.jpeg"
+            },
+            {
+                "url": "public/img/sagaAndroids5.jpeg"
+            },
+            {
+                "url": "public/img/sagaAndroids6.jpeg"
             }
+
         ]
     },
     {
@@ -118,6 +128,33 @@
         "summary": "Le redoutable Majin Buu menace l'univers avec son immense pouvoir de destruction.",
         "content": "<p>La Saga de Majin Buu débute avec la libération de Majin Buu par Babidi, un sorcier maléfique qui souhaite dominer l'univers. Majin Buu, avec ses multiples transformations, devient une menace grandissante pour la Terre et ses habitants. Les Z Fighters, y compris Goku, Vegeta, et leurs enfants, combattent désespérément contre Buu. La saga culmine avec la fusion de Goku et Vegeta en Vegito, et plus tard la transformation de Goku en Super Saiyan 3 pour affronter Kid Buu, la forme originale et la plus puissante de Buu. Goku réussit finalement à détruire Buu avec une Genkidama, restaurant la paix dans l'univers.</p>",
         "images": [
+            {
+                "url": "public/img/sagaBoo.jpeg"
+            },
+            {
+                "url": "/img/bigBangAttakVegeta2.jpg"
+            },
+            {
+                "url": "/img/bigbangAttakVegeta3.jpg"
+            },
+            {
+                "url": "/img/bigBangAttakVegeta1.jpg"
+            },
+            {
+                "url": "/img/bigBangAttakVegeta2.jpg"
+            },
+            {
+                "url": "/img/bigbangAttakVegeta3.jpg"
+            },
+            {
+                "url": "/img/bigBangAttakVegeta1.jpg"
+            },
+            {
+                "url": "/img/bigBangAttakVegeta2.jpg"
+            },
+            {
+                "url": "/img/bigbangAttakVegeta3.jpg"
+            },
             {
                 "url": "/img/bigBangAttakVegeta1.jpg"
             },
