@@ -1,0 +1,132 @@
+[
+    {
+        "id": 1,
+        "title": "Saga des Saiyans",
+        "summary": "Les guerriers Saiyans envahissent la Terre, obligeant Goku et ses amis à se battre contre Nappa et Vegeta.",
+        "content": "<p>La Saga des Saiyans commence avec l'arrivée de Raditz, le frère de Goku, qui révèle à ce dernier ses origines Saiyanes. Après un combat intense, Raditz est tué, mais pas avant d'avoir envoyé un message à Vegeta et Nappa, deux autres Saiyans, les informant de la présence de puissants guerriers sur Terre. Goku, Piccolo, et les autres Z Fighters s'entraînent durement pour affronter cette nouvelle menace. Les combats culminent avec la bataille contre Nappa et Vegeta, où Goku révèle pour la première fois le Kaioken, et les Saiyans montrent leur capacité de transformation en Grands Singes.</p>",
+        "images": [
+            {
+                "url": "/img/superSaiyanGoku.jpeg"
+            },
+            {
+                "url": "/img/superSaiyanVegeta.jpg",
+                "title": "Vegeta"
+            },
+            {
+                "url": "/img/superSaiyanGohan.jpg",
+                "title": "Gohan"
+            },
+            {
+                "url": "/img/gokussj3.jpeg",
+                "title": "Sangoku Super Saiyan 3"
+            },
+            {
+                "url": "/img/gokugod.jpeg",
+                "title": "Sangoku God"
+            },
+            {
+                "url": "/img/gokusupersaiyanblue.png",
+                "title": "Sangoku Super Saiyan Blue"
+            },
+            {
+                "url": "/img/goku-ultrainstinct.jpg",
+                "title": "Sangoku Ultra Instinct"
+            },
+            {
+                "url": "/img/gokussj4.png",
+                "title": "Sangoku Super Saiyan 4"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Saga de Namek",
+        "summary": "La quête des Dragon Balls sur Namek mène à des affrontements avec les forces de Freezer.",
+        "content": "<p>La Saga de Namek débute lorsque Goku et ses amis se rendent sur la planète Namek pour utiliser les Dragon Balls et ressusciter leurs amis morts. Ils y rencontrent Freezer, un tyran intergalactique qui veut également les Dragon Balls pour devenir immortel. Les Z Fighters, y compris Vegeta, s'allient pour affronter les forces de Freezer, menant à une série de batailles épiques. Le combat culmine avec la transformation de Goku en Super Saiyan après la mort de Krillin, et la bataille finale contre Freezer.</p>",
+        "images": [
+            {
+                "url": "/img/kamehamehaGokuFin.jpg"
+            },
+            {
+                "url": "/img/kamehamehaGokuDebut.jpg"
+            },
+            {
+                "url": "/img/kamehamehaGoku2.png"
+            },
+            {
+                "url": "/img/kamehamehaGokuEnvoi.png"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Saga de Freezer",
+        "summary": "Goku et ses amis affrontent le tyran Freezer sur Namek dans une bataille décisive pour l'univers.",
+        "content": "<p>La Saga de Freezer continue les événements de Namek avec l'intensification du conflit contre Freezer. Ce dernier se transforme à plusieurs reprises, chaque forme augmentant sa puissance. Goku et ses alliés, y compris Vegeta, Piccolo, et Gohan, luttent pour survivre et protéger les habitants de Namek. L'apogée de cette saga est le combat légendaire entre Goku, qui atteint pour la première fois la forme de Super Saiyan, et Freezer, dans une bataille qui secoue toute la planète Namek.</p>",
+        "images": [
+            {
+                "url": "/img/genkidama1.jpeg"
+            },
+            {
+                "url": "/img/genkidama2.jpg"
+            },
+            {
+                "url": "/img/genkidama3.png"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Saga des Androïds",
+        "summary": "Des androïdes créés par le Dr. Gero menacent la paix sur Terre.",
+        "content": "<p>La Saga des Androïds commence avec l'arrivée de Trunks du futur, qui avertit les Z Fighters de l'imminente attaque des Androïdes, des créatures artificielles créées par le Dr. Gero pour se venger de Goku et ses amis. Les combats contre les Androïdes 17 et 18 montrent leur puissance dévastatrice. La saga s'intensifie avec l'apparition de Cell, un bio-androïde qui absorbe les Androïdes pour atteindre sa forme parfaite. Les Z Fighters doivent trouver un moyen de l'arrêter avant qu'il ne détruise le monde entier.</p>",
+        "images": [
+            {
+                "url": "/img/kaiokenGoku1.png"
+            },
+            {
+                "url": "/img/kaiokenGoku3.jpg"
+            },
+            {
+                "url": "/img/kaiokenGoku4.jpg"
+            },
+            {
+                "url": "/img/kaiokenGoku5.jpg"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Saga de Cell",
+        "summary": "Le tournoi des Cell Games met en jeu l'avenir de la Terre contre Cell, le bio-androïde parfait.",
+        "content": "<p>La Saga de Cell se concentre sur le tournoi des Cell Games, organisé par Cell après avoir atteint sa forme parfaite en absorbant les Androïdes 17 et 18. Cell défie les Z Fighters et annonce un tournoi pour décider du sort de la Terre. Goku, Gohan, et les autres Z Fighters participent, menant à des combats intenses. Le moment clé est lorsque Gohan atteint le Super Saiyan 2, surpassant son père et détruisant Cell avec une Kamehameha ultime. Cependant, Goku sacrifie sa vie pour sauver la Terre en envoyant Cell dans une autre dimension avant qu'il n'explose.</p>",
+        "images": [
+            {
+                "url": "/img/finalFlashVegeta1.jpg"
+            },
+            {
+                "url": "/img/finalFlashVegeta2.png"
+            },
+            {
+                "url": "/img/finalFlashVegeta3.jpg"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Saga de Majin Buu",
+        "summary": "Le redoutable Majin Buu menace l'univers avec son immense pouvoir de destruction.",
+        "content": "<p>La Saga de Majin Buu débute avec la libération de Majin Buu par Babidi, un sorcier maléfique qui souhaite dominer l'univers. Majin Buu, avec ses multiples transformations, devient une menace grandissante pour la Terre et ses habitants. Les Z Fighters, y compris Goku, Vegeta, et leurs enfants, combattent désespérément contre Buu. La saga culmine avec la fusion de Goku et Vegeta en Vegito, et plus tard la transformation de Goku en Super Saiyan 3 pour affronter Kid Buu, la forme originale et la plus puissante de Buu. Goku réussit finalement à détruire Buu avec une Genkidama, restaurant la paix dans l'univers.</p>",
+        "images": [
+            {
+                "url": "/img/bigBangAttakVegeta1.jpg"
+            },
+            {
+                "url": "/img/bigBangAttakVegeta2.jpg"
+            },
+            {
+                "url": "/img/bigbangAttakVegeta3.jpg"
+            }
+        ]
+    }
+]

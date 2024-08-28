@@ -123,8 +123,15 @@
       <!-- Contenu de la section 'Combats' -->
       <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
         <div class="accordion-body">
-          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
-          adds the appropriate classes that we use to style each element.
+          <ul>
+            <!-- Boucle sur les posts pour afficher chaque post avec un lien vers sa page dédiée -->
+            <li v-for="post in posts3" :key="post.id">
+              <router-link :to="{ name: 'Post3', params: { id: post.id } }">
+                {{ post.title }}
+              </router-link>
+              <p>{{ post.summary }}</p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -139,8 +146,26 @@ export default {
     // Déclaration des variables réactives pour stocker les données des posts
     const posts = ref([]);
     const posts2 = ref([]);
+    const posts3 = ref([]);
 
     // Fonction asynchrone pour récupérer les posts depuis le fichier '/data/posts.json'
+    const fetchPosts3 = async () => {
+      try {
+        // Envoi de la requête fetch pour récupérer les données
+        const response = await fetch('/data/posts3.json');
+        // Vérification si la réponse est correcte (code HTTP 200–299)
+        if (!response.ok) {
+          throw new Error('Failed to load posts3.json');
+        }
+        // Mise à jour de la variable réactive 'posts' avec les données JSON récupérées
+        posts3.value = await response.json();
+      } catch (error) {
+        // Gestion des erreurs en cas de problème avec la récupération des données
+        console.error('Error fetching posts3.json:', error);
+      }
+    };
+
+    // Fonction asynchrone pour récupérer les posts depuis le fichier '/data/posts3.json'
     const fetchPosts = async () => {
       try {
         // Envoi de la requête fetch pour récupérer les données
@@ -211,12 +236,14 @@ export default {
       // Appel des fonctions pour récupérer les données des posts
       fetchPosts();
       fetchPosts2();
+      fetchPosts3();
     });
 
     // Retour des variables et fonctions pour qu'elles soient accessibles dans le template du composant
     return {
       posts,
       posts2,
+      posts3,
       getFilteredPosts,
       characters
     };
