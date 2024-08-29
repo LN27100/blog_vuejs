@@ -136,6 +136,63 @@
       </div>
     </div>
   </div>
+
+  <div clas="containerSelect">
+      <!-- Intégration du formulaire -->
+      <form @submit="checkForm" action="/something" method="post">
+      <p v-if="errors.length">
+        <b>Please correct the following error(s):</b>
+        <ul>
+          <li v-for="error in errors" :key="error">{{ error }}</li>
+        </ul>
+      </p>
+
+      <p>
+        <label for="movie">Quel personnage aimeriez-vous trouver sur le blog qui n'y est pas?</label>
+        <select name="movie" id="movie" v-model="movie">
+          <option>Vegeto</option>
+          <option>Gogeta</option>
+          <option>C16</option>
+          <option>Shenron</option>
+          <option>Raditz</option>
+          <option>Nappa</option>
+          <option>Mr Satan</option>
+          <option>Boo</option>
+          <option>Cell</option>
+          <option>Freezer</option>
+          <option>Mr Popo</option>
+          <option>Oob</option>
+          <option>Chiaotzu</option>
+          <option>Tien shin han</option>
+          <option>Lunch</option>
+          <option>Dabra</option>
+          <option>Kaio Shin</option>
+          <option>Dendé</option>
+          <option>Recoome</option>
+          <option>Tout-puissant</option>
+          <option>Jeice</option>
+          <option>Spopovich</option>
+          <option>Kibito</option>
+          <option>Plume</option>
+          <option>Madame Brief</option>
+          <option>Tao Pai Pai</option>
+          <option>Kaiō del Este</option>
+          <option>Burter</option>
+          <option>Dodoria</option>
+          <option>Android 19</option>
+          <option>Garlic Jr.</option>
+          <option>Dendé</option>
+          <option>Dendé</option>
+          <option>Dendé</option>
+          <option>Dendé</option>
+        </select>
+      </p>
+
+      <p>
+        <input type="submit" value="Submit">  
+      </p>
+    </form>
+  </div>
 </template>
 
 <script>
@@ -143,69 +200,72 @@ import { ref, onMounted } from 'vue';
 
 export default {
   setup() {
-    // Déclaration des variables réactives pour stocker les données des posts
+    // Variables réactives pour les données du formulaire
+    const errors = ref([]);
+    const movie = ref(null);
+
+    // Fonction de validation du formulaire
+    const checkForm = (e) => {
+      errors.value = [];
+
+      // Vérifie si un film est sélectionné
+      if (!movie.value) {
+        errors.value.push("Veuillez sélectionner un personnage.");
+      }
+
+      if (errors.value.length) {
+        e.preventDefault(); // Empêche la soumission du formulaire si des erreurs existent
+      } else {
+        // Le formulaire est valide, il sera soumis automatiquement
+        return true;
+      }
+    };
+
+    // Le reste de votre setup existant
     const posts = ref([]);
     const posts2 = ref([]);
     const posts3 = ref([]);
 
-    // Fonction asynchrone pour récupérer les posts depuis le fichier '/data/posts.json'
-    const fetchPosts3 = async () => {
-      try {
-        // Envoi de la requête fetch pour récupérer les données
-        const response = await fetch('/data/posts3.json');
-        // Vérification si la réponse est correcte (code HTTP 200–299)
-        if (!response.ok) {
-          throw new Error('Failed to load posts3.json');
-        }
-        // Mise à jour de la variable réactive 'posts' avec les données JSON récupérées
-        posts3.value = await response.json();
-      } catch (error) {
-        // Gestion des erreurs en cas de problème avec la récupération des données
-        console.error('Error fetching posts3.json:', error);
-      }
-    };
-
-    // Fonction asynchrone pour récupérer les posts depuis le fichier '/data/posts3.json'
     const fetchPosts = async () => {
       try {
-        // Envoi de la requête fetch pour récupérer les données
         const response = await fetch('/data/posts.json');
-        // Vérification si la réponse est correcte (code HTTP 200–299)
         if (!response.ok) {
           throw new Error('Failed to load posts.json');
         }
-        // Mise à jour de la variable réactive 'posts' avec les données JSON récupérées
         posts.value = await response.json();
       } catch (error) {
-        // Gestion des erreurs en cas de problème avec la récupération des données
         console.error('Error fetching posts.json:', error);
       }
     };
 
-    // Fonction asynchrone pour récupérer les posts depuis le fichier '/data/posts2.json'
     const fetchPosts2 = async () => {
       try {
-        // Envoi de la requête fetch pour récupérer les données
         const response = await fetch('/data/posts2.json');
-        // Vérification si la réponse est correcte (code HTTP 200–299)
         if (!response.ok) {
           throw new Error('Failed to load posts2.json');
         }
-        // Mise à jour de la variable réactive 'posts2' avec les données JSON récupérées
         posts2.value = await response.json();
       } catch (error) {
-        // Gestion des erreurs en cas de problème avec la récupération des données
         console.error('Error fetching posts2.json:', error);
       }
     };
 
-    // Fonction pour filtrer les posts basés sur une liste d'IDs fournie
+    const fetchPosts3 = async () => {
+      try {
+        const response = await fetch('/data/posts3.json');
+        if (!response.ok) {
+          throw new Error('Failed to load posts3.json');
+        }
+        posts3.value = await response.json();
+      } catch (error) {
+        console.error('Error fetching posts3.json:', error);
+      }
+    };
+
     const getFilteredPosts = (filterIds) => {
-      // Filtrage des posts dans 'posts2' pour ne garder que ceux dont l'ID est dans 'filterIds'
       return posts2.value.filter(post => filterIds.includes(post.id));
     };
 
-    // Déclaration d'une liste de personnages avec leurs IDs associés
     const characters = [
       { name: 'Sangoku', ids: [1, 2, 5, 28, 29] },
       { name: 'Sangohan', ids: [23, 10, 33, 34, 35, 70] },
@@ -216,7 +276,7 @@ export default {
       { name: 'Piccolo', ids: [7, 8, 9, 32] },
       { name: 'Krillin', ids: [13, 14, 25] },
       { name: 'C18', ids: [48, 49] },
-      { name: 'Tien Shinhan', ids: [15,16, 38, 44] },
+      { name: 'Tien Shinhan', ids: [15, 16, 38, 44] },
       { name: 'Yamcha', ids: [26, 27] },
       { name: 'Chiaotzu', ids: [46, 47, 42] },
       { name: 'C16', ids: [61] },
@@ -231,16 +291,16 @@ export default {
       { name: 'Dr Gero', ids: [59] }
     ];
 
-    // Hook de cycle de vie (intervention à un moment précis) qui s'exécute après que le composant a été monté au DOM
     onMounted(() => {
-      // Appel des fonctions pour récupérer les données des posts
       fetchPosts();
       fetchPosts2();
       fetchPosts3();
     });
 
-    // Retour des variables et fonctions pour qu'elles soient accessibles dans le template du composant
     return {
+      errors,
+      movie,
+      checkForm,
       posts,
       posts2,
       posts3,
@@ -250,7 +310,6 @@ export default {
   }
 };
 </script>
-
 
 
 
@@ -525,6 +584,44 @@ p {
   font-weight: bold;
 }
 
+containerSelect {
+  display: flex; /* Utilisation de flexbox */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  height: 100vh; /* Hauteur de la fenêtre */
+}
+
+/* Styles pour le formulaire */
+form {
+  display: flex; /* Flexbox pour aligner les éléments du formulaire */
+  flex-direction: column; /* Alignement des éléments en colonne */
+  align-items: center; /* Centre horizontalement les éléments du formulaire */
+  padding: 2rem; 
+  background-color: #F89544; 
+}
+
+/* Styles pour le select */
+select {
+  margin-top: 1rem;
+  margin-left:1rem;
+  width: 15rem;
+}
+
+/* Styles pour le bouton d'envoi */
+input[type="submit"] {
+  margin-top: 1rem;
+  padding: 0.3rem 0.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #16537e;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #2986cc;
+}
 
 
 /* RESPONSIVE */
