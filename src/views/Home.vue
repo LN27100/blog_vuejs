@@ -148,19 +148,25 @@
       </p>
 
       <p>
-        <label for="movie">Quel personnage aimeriez-vous trouver sur le blog qui n'y est pas?</label>
+        <label for="movie">Quel personnage aimeriez-vous trouver sur le blog qui n'y est pas encore?</label>
         <select name="movie" id="movie" v-model="movie">
+          <option>Shenron</option>
+          <option>Dr. Brief</option>
           <option>Vegeto</option>
           <option>Gogeta</option>
+          <option>Maître Kaio (Kaiô du nord)</option>
+          <option>Mr Popo</option>
+          <option>Kami-sama (Tout-puissant)</option>
+          <option>Baba la voyante</option>
+          <option>Grand roi Enma</option>
+          <option>Karin</option>
           <option>C16</option>
-          <option>Shenron</option>
           <option>Raditz</option>
           <option>Nappa</option>
           <option>Mr Satan</option>
           <option>Boo</option>
           <option>Cell</option>
           <option>Freezer</option>
-          <option>Mr Popo</option>
           <option>Oob</option>
           <option>Chiaotzu</option>
           <option>Tien shin han</option>
@@ -169,7 +175,6 @@
           <option>Kaio Shin</option>
           <option>Dendé</option>
           <option>Recoome</option>
-          <option>Tout-puissant</option>
           <option>Jeice</option>
           <option>Spopovich</option>
           <option>Kibito</option>
@@ -181,15 +186,49 @@
           <option>Dodoria</option>
           <option>Android 19</option>
           <option>Garlic Jr.</option>
-          <option>Dendé</option>
-          <option>Dendé</option>
-          <option>Dendé</option>
-          <option>Dendé</option>
+          <option>Ginue</option>
+          <option>Zabon</option>
+          <option>Guru (grand doyen)</option>
+          <option>Umigame</option>
+          <option>Bra</option>
+          <option>C17</option>
+          <option>Païkuhan</option>
+          <option>Babidi</option>
+          <option>Bibidi</option>
+          <option>Yajirobé</option>
+          <option>Oolong</option>
+          <option>Gyûmaô</option>
+          <option>Arbitre du Tenkaichi Budôkai</option>
+          <option>Kiwi</option>
+          <option>Guldo</option>
+          <option>Nail</option>
+          <option>Cargo</option>
+          <option>West Kai</option>
+          <option>Saibaiman</option>
+          <option>Cell Jr.</option>
+          <option>Kibitoshin</option>
+          <option>Yamu</option>
+          <option>Spopovitch</option>
+          <option>Bardock</option>
+          <option>Beerus</option>
+          <option>Wish</option>
+          <option>Broly</option>
+          <option>Bubbles</option>
+          <option>Spopovitch</option>
+          <option>Cooler</option>
+          <option>Jiren</option>
+          <option>Kaiô de l'Est</option>
+          <option>Kaiô de l'Ouest</option>
+          <option>Kaiô du sud</option>
+          <option>Grégory</option>
+
+
+          
         </select>
       </p>
 
       <p>
-        <input type="submit" value="Submit">  
+        <input type="submit" value="Soumettre">  
       </p>
     </form>
   </div>
