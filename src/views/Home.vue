@@ -37,15 +37,15 @@
     </div>
   </div>
 
-   <!-- Accordion personnalisé pour afficher des sections repliables -->
-   <div class="customAccordion">
+  <!-- Accordion personnalisé pour afficher des sections repliables -->
+  <div class="customAccordion">
     <!-- Premier item de l'accordéon pour afficher les personnages -->
     <div class="accordion-item">
       <h2 class="accordion-header">
         <!-- Bouton pour ouvrir/fermer la section 'Techniques de combat et pouvoirs' -->
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
           aria-expanded="false" aria-controls="collapseOne">
-       Personnages
+          Personnages
         </button>
       </h2>
       <!-- Contenu de la section 'Personnages' -->
@@ -84,8 +84,7 @@
               <h2 class="accordion-header">
                 <!-- Bouton pour ouvrir/fermer la section de chaque personnage -->
                 <button class="accordion-button collapsed" type="button" :data-bs-toggle="'collapse'"
-                  :data-bs-target="'#collapse-' + index" aria-expanded="false"
-                  :aria-controls="'collapse-' + index">
+                  :data-bs-target="'#collapse-' + index" aria-expanded="false" :aria-controls="'collapse-' + index">
                   {{ character.name }}
                 </button>
               </h2>
@@ -142,9 +141,9 @@
     <form @submit.prevent="handleSubmit">
       <p v-if="errors.length">
         <b>Veuillez corriger les erreurs suivantes :</b>
-        <ul>
-          <li v-for="error in errors" :key="error">{{ error }}</li>
-        </ul>
+      <ul>
+        <li v-for="error in errors" :key="error">{{ error }}</li>
+      </ul>
       </p>
 
       <p>
@@ -225,12 +224,12 @@
           <option>Kaiô du sud</option>
           <option>Roi Vegeta (père de Vegeta)</option>
           <option>Son Gonhan (grand-père)</option>
-          <option>Vieux Kaiô Shin</option>          
+          <option>Vieux Kaiô Shin</option>
         </select>
       </p>
 
       <p>
-        <input type="submit" value="Soumettre">  
+        <input type="submit" value="Soumettre">
       </p>
     </form>
   </div>
@@ -259,10 +258,11 @@ export default {
       }
 
       if (!errors.value.length) {
-        // Aucune erreur, redirection vers la page de confirmation
-        router.push({ 
-          name: 'ConfirmPerso', 
-          query: { message: `La demande pour le personnage ${movie.value} a bien été prise en compte.` }
+        // Aucune erreur, redirection vers la page de confirmation avec mise en forme du texte
+        const message = `La demande pour le personnage <span style="color: #9f0c0c; font-weight: bold; font-family: Verdana; font-size: 1.5rem;">${movie.value}</span> a bien été prise en compte.`;
+        router.push({
+          name: 'ConfirmPerso',
+          query: { message }
         });
       }
     };
@@ -536,23 +536,23 @@ export default {
 
 .customAccordion {
   margin-top: 20rem;
-    /* Transition pour les propriétés liées à l'accordéon */
+  /* Transition pour les propriétés liées à l'accordéon */
   --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
   --bs-accordion-border-color: var(--bs-border-color);
   --bs-accordion-border-width: var(--bs-border-width);
   --bs-accordion-border-radius: var(--bs-border-radius);
   --bs-accordion-inner-border-radius: calc(var(--bs-border-radius) -(var(--bs-border-width)));
-    /* Padding horizontal pour les boutons de l'accordéon */
+  /* Padding horizontal pour les boutons de l'accordéon */
   --bs-accordion-btn-padding-x: 1.25rem;
-    /* Padding vertical pour les boutons de l'accordéon */
+  /* Padding vertical pour les boutons de l'accordéon */
   --bs-accordion-btn-padding-y: 1rem;
   --bs-accordion-btn-color: var(--bs-body-color);
   --bs-accordion-btn-bg: var(--bs-accordion-bg);
-    /* Ombre portée de la boîte lors du focus sur les boutons de l'accordéon */
+  /* Ombre portée de la boîte lors du focus sur les boutons de l'accordéon */
   --bs-accordion-btn-focus-box-shadow: 0 0 0 0.1rem #9f0c0c;
   --bs-accordion-body-padding-x: 1.25rem;
   --bs-accordion-body-padding-y: 1rem;
-    /* Couleur de fond lorsque l'accordéon est actif, héritée d'une couleur de fond secondaire */
+  /* Couleur de fond lorsque l'accordéon est actif, héritée d'une couleur de fond secondaire */
   --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
 }
 
@@ -629,25 +629,32 @@ p {
 }
 
 containerSelect {
-  display: flex; /* Utilisation de flexbox */
-  justify-content: center; /* Centre horizontalement */
-  align-items: center; /* Centre verticalement */
-  height: 100vh; /* Hauteur de la fenêtre */
+  display: flex;
+  /* Utilisation de flexbox */
+  justify-content: center;
+  /* Centre horizontalement */
+  align-items: center;
+  /* Centre verticalement */
+  height: 100vh;
+  /* Hauteur de la fenêtre */
 }
 
 /* Styles pour le formulaire */
 form {
-  display: flex; /* Flexbox pour aligner les éléments du formulaire */
-  flex-direction: column; /* Alignement des éléments en colonne */
-  align-items: center; /* Centre horizontalement les éléments du formulaire */
-  padding: 2rem; 
-  background-color: #F89544; 
+  display: flex;
+  /* Flexbox pour aligner les éléments du formulaire */
+  flex-direction: column;
+  /* Alignement des éléments en colonne */
+  align-items: center;
+  /* Centre horizontalement les éléments du formulaire */
+  padding: 2rem;
+  background-color: #F89544;
 }
 
 /* Styles pour le select */
 select {
   margin-top: 1rem;
-  margin-left:1rem;
+  margin-left: 1rem;
   width: 15rem;
 }
 

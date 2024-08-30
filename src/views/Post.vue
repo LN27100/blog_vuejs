@@ -99,22 +99,5 @@ export default {
   margin-top: 0.5rem;
 }
 
-.back-button {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  margin-top: 1rem;
-  margin-left: 1rem;
-  background-color: yellow;
-  color: black;
-  border: none;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-}
 
-.back-button:hover {
-  background-color: #005a99;
-  color: white;
-}
 </style>
