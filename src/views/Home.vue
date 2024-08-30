@@ -137,11 +137,11 @@
     </div>
   </div>
 
-  <div clas="containerSelect">
-      <!-- Intégration du formulaire -->
-      <form @submit="checkForm" action="/something" method="post">
+  <div class="containerSelect">
+    <!-- Intégration du formulaire -->
+    <form @submit.prevent="handleSubmit">
       <p v-if="errors.length">
-        <b>Please correct the following error(s):</b>
+        <b>Veuillez corriger les erreurs suivantes :</b>
         <ul>
           <li v-for="error in errors" :key="error">{{ error }}</li>
         </ul>
@@ -150,11 +150,15 @@
       <p>
         <label for="movie">Quel personnage aimeriez-vous trouver sur le blog qui n'y est pas encore?</label>
         <select name="movie" id="movie" v-model="movie">
+          <option disabled value="">Veuillez sélectionner un personnage</option>
           <option>Shenron</option>
           <option>Dr. Brief</option>
           <option>Vegeto</option>
           <option>Gogeta</option>
+          <option>Veku</option>
           <option>Maître Kaio (Kaiô du nord)</option>
+          <option>Grégory</option>
+          <option>Bubbles</option>
           <option>Mr Popo</option>
           <option>Kami-sama (Tout-puissant)</option>
           <option>Baba la voyante</option>
@@ -213,17 +217,15 @@
           <option>Beerus</option>
           <option>Wish</option>
           <option>Broly</option>
-          <option>Bubbles</option>
           <option>Spopovitch</option>
           <option>Cooler</option>
           <option>Jiren</option>
           <option>Kaiô de l'Est</option>
           <option>Kaiô de l'Ouest</option>
           <option>Kaiô du sud</option>
-          <option>Grégory</option>
-
-
-          
+          <option>Roi Vegeta (père de Vegeta)</option>
+          <option>Son Gonhan (grand-père)</option>
+          <option>Vieux Kaiô Shin</option>          
         </select>
       </p>
 
@@ -236,15 +238,19 @@
 
 <script>
 import { ref, onMounted } from 'vue';
+import { useRouter } from 'vue-router';
 
 export default {
   setup() {
+    // Utilisation du router
+    const router = useRouter();
+
     // Variables réactives pour les données du formulaire
     const errors = ref([]);
     const movie = ref(null);
 
-    // Fonction de validation du formulaire
-    const checkForm = (e) => {
+    // Fonction de validation et de soumission du formulaire
+    const handleSubmit = () => {
       errors.value = [];
 
       // Vérifie si un film est sélectionné
@@ -252,11 +258,12 @@ export default {
         errors.value.push("Veuillez sélectionner un personnage.");
       }
 
-      if (errors.value.length) {
-        e.preventDefault(); // Empêche la soumission du formulaire si des erreurs existent
-      } else {
-        // Le formulaire est valide, il sera soumis automatiquement
-        return true;
+      if (!errors.value.length) {
+        // Aucune erreur, redirection vers la page de confirmation
+        router.push({ 
+          name: 'ConfirmPerso', 
+          query: { message: `La demande pour le personnage ${movie.value} a bien été prise en compte.` }
+        });
       }
     };
 
@@ -339,7 +346,7 @@ export default {
     return {
       errors,
       movie,
-      checkForm,
+      handleSubmit,
       posts,
       posts2,
       posts3,
@@ -349,8 +356,6 @@ export default {
   }
 };
 </script>
-
-
 
 
 <style scoped>
