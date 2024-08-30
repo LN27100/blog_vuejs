@@ -26,7 +26,6 @@
     </div>
 
     <div class="boules-container">
-      <!-- Utilisez des chemins relatifs pour les images dans le répertoire public -->
       <img src="/img/boule2.png" alt="dragon ball 2 étoiles" class="cristalBall2">
       <img src="/img/boule1.png" alt="dragon ball 1 étoile" class="cristalBall">
       <img src="/img/boule3.png" alt="dragon ball 3 étoiles" class="cristalBall3">
