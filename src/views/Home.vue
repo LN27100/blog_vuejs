@@ -139,10 +139,9 @@
     <!-- Intégration du formulaire -->
     <form @submit.prevent="handleSubmit">
       <p v-if="errors.length">
-        <b>Veuillez corriger les erreurs suivantes :</b>
-      <ul>
-        <li v-for="error in errors" :key="error">{{ error }}</li>
-      </ul>
+      
+        <h6 class="error" v-for="error in errors" :key="error">{{ error }}</h6>
+      
       </p>
 
       <p>
@@ -673,6 +672,10 @@ input[type="submit"]:hover {
   background-color: #2986cc;
 }
 
+.error {
+  color: red;
+  font-weight: bold;
+}
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
