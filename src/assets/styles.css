@@ -16,7 +16,7 @@ body {
   }
 
   h3 {
-    color: #2986cc;
+    color: #0b5182;
   }
 
   h4 {
@@ -32,6 +32,7 @@ body {
     margin-bottom: 1rem;
     font-weight: bold;
     text-decoration: underline;
+    color: #2880c2;
   }
 
   /* Styles pour le bouton retour accueil */
