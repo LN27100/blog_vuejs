@@ -31,7 +31,6 @@ body {
   .describ ul li {
     margin-bottom: 1rem;
     font-weight: bold;
-    text-decoration: underline;
     color: #2880c2;
   }
 
@@ -55,3 +54,179 @@ body {
     background-color: #16537e;
     color: white;
   }
+
+  .customAccordion {
+    margin-top: 20rem;
+    /* Transition pour les propriétés liées à l'accordéon */
+    --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+    --bs-accordion-border-color: var(--bs-border-color);
+    --bs-accordion-border-width: var(--bs-border-width);
+    --bs-accordion-border-radius: var(--bs-border-radius);
+    --bs-accordion-inner-border-radius: calc(var(--bs-border-radius) -(var(--bs-border-width)));
+    /* Padding horizontal pour les boutons de l'accordéon */
+    --bs-accordion-btn-padding-x: 1.25rem;
+    /* Padding vertical pour les boutons de l'accordéon */
+    --bs-accordion-btn-padding-y: 1rem;
+    --bs-accordion-btn-color: var(--bs-body-color);
+    --bs-accordion-btn-bg: var(--bs-accordion-bg);
+    /* Ombre portée de la boîte lors du focus sur les boutons de l'accordéon */
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.1rem #9f0c0c;
+    --bs-accordion-body-padding-x: 1.25rem;
+    --bs-accordion-body-padding-y: 1rem;
+    /* Couleur de fond lorsque l'accordéon est actif, héritée d'une couleur de fond secondaire */
+    --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
+  }
+  
+  .customAccordion2 {
+    --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+    --bs-accordion-border-color: var(--bs-border-color);
+    --bs-accordion-border-width: var(--bs-border-width);
+    --bs-accordion-border-radius: var(--bs-border-radius);
+    --bs-accordion-inner-border-radius: calc(var(--bs-border-radius) -(var(--bs-border-width)));
+    --bs-accordion-btn-padding-x: 1.25rem;
+    --bs-accordion-btn-padding-y: 1rem;
+    --bs-accordion-btn-color: var(--bs-body-color);
+    --bs-accordion-btn-bg: var(--bs-accordion-bg);
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.1rem #9f0c0c;
+    --bs-accordion-body-padding-x: 1.25rem;
+    --bs-accordion-body-padding-y: 1rem;
+    --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
+  }
+  
+  /* cibler l'élément accordion-button en mode focus pour ajouter un bord arrondi*/
+  .customAccordion .accordion-button:focus {
+    border-radius: 5px;
+    box-shadow: var(--bs-accordion-btn-focus-box-shadow);
+  }
+  
+  /* Style de l'accordéon  replié */
+  .accordion-button.collapsed {
+    color: black;
+  }
+  
+  /* Style de l'accordéon déroulé */
+  .accordion-button:not(.collapsed) {
+    background-color: #F89544;
+    font-weight: bold;
+    font-family: 'Chelsea Market', cursive;
+    color: white;
+  
+  }
+  
+  .accordion-item {
+    background-color: #F89544;
+    border: solid 1px #a43131;
+    border-radius: 5px;
+  
+  }
+  
+  .accordion-item2 {
+    background-color: #F89544;
+    border: solid 1px #16537e;
+    border-radius: 5px;
+  
+  }
+  
+  ul {
+    margin-left: 2rem;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  li {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #2986cc;
+    width: 80%;
+  }
+  
+  a {
+    color: #800000;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  p {
+    color: #333333;
+    font-weight: bold;
+  }
+  
+  containerSelect {
+    display: flex;
+    /* Utilisation de flexbox */
+    justify-content: center;
+    /* Centre horizontalement */
+    align-items: center;
+    /* Centre verticalement */
+    height: 100vh;
+    /* Hauteur de la fenêtre */
+  }
+  
+  /* Styles pour le formulaire */
+  form {
+    display: flex;
+    /* Flexbox pour aligner les éléments du formulaire */
+    flex-direction: column;
+    /* Alignement des éléments en colonne */
+    align-items: center;
+    /* Centre horizontalement les éléments du formulaire */
+    padding: 2rem;
+    background-color: #F89544;
+  }
+  
+  /* Styles pour le select */
+  select {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 15rem;
+  }
+  
+  /* Styles pour le bouton d'envoi */
+  input[type="submit"] {
+    margin-top: 1rem;
+    padding: 0.3rem 0.5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #16537e;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #2986cc;
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+  }
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  ul {
+    margin-top: 3rem;
+  }
+
+  li {
+    margin-bottom: 0.25rem;
+  }
+}
+
+.lettres {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 1rem;
+}
+
+.lettres img {
+  width: 5rem;
+}
