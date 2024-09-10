@@ -1,18 +1,21 @@
 <template>
+  <!-- Section titre -->
   <div>
     <BlogTitle />
     <ImgBoules />
   </div>
 
-  <!-- Accordion personnalisé pour afficher des sections repliables -->
+  <!-- Accordéons personnalisés pour afficher des sections repliables -->
   <div class="customAccordion">
     <AccordionOne />
     <AccordionTwo />
     <AccordionThree />
   </div>
 
+  <!-- Section demande ajout personnages -->
   <SelectPersonnages />
   
+  <!-- Signature site par images -->
   <div class="lettres">
     <img src="/img/lettreDBZ_P.png" alt="Lettre P">
     <img src="/img/lettreDBZ_H.png" alt="Lettre H">
